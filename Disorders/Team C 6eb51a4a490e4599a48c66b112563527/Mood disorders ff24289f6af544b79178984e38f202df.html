@@ -1,0 +1,680 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mood disorders</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ff24289f-6af5-44b7-9178-984e38f202df" class="page sans"><header><h1 class="page-title">Mood disorders</h1><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Done</span></td></tr><tr class="property-row property-row-date"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesDate"><path d="M10.8889,5.5 L3.11111,5.5 L3.11111,7.05556 L10.8889,7.05556 L10.8889,5.5 Z M12.4444,1.05556 L11.6667,1.05556 L11.6667,0 L10.1111,0 L10.1111,1.05556 L3.88889,1.05556 L3.88889,0 L2.33333,0 L2.33333,1.05556 L1.55556,1.05556 C0.692222,1.05556 0.00777777,1.75556 0.00777777,2.61111 L0,12.5 C0,13.3556 0.692222,14 1.55556,14 L12.4444,14 C13.3,14 14,13.3556 14,12.5 L14,2.61111 C14,1.75556 13.3,1.05556 12.4444,1.05556 Z M12.4444,12.5 L1.55556,12.5 L1.55556,3.94444 L12.4444,3.94444 L12.4444,12.5 Z M8.55556,8.61111 L3.11111,8.61111 L3.11111,10.1667 L8.55556,10.1667 L8.55556,8.61111 Z"></path></svg></span>Due Date</th><td><time>@October 10, 2022</time></td></tr></tbody></table></header><div class="page-body"><hr id="331b8225-f543-44dc-97bf-cf8c093c1ba2"/><hr id="e7ebb137-2a4e-4e3a-ac3c-3b5e6355bb65"/><hr id="425550ee-ae67-4019-9ac2-2edd2c18ba7e"/><h2 id="8d8fffc1-d69e-416f-8314-304971e5e2b4" class=""><details open=""><summary>Major depressive disorder</summary></details></h2><div class="indented"><h3 id="274789e0-1a88-4fc2-8df1-d0bedde0aa40" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="0288d1c8-003f-4ca0-9e51-c1f31c8b6f00" class=""><strong>Prolonged and persistent periods of extreme sadness.</strong></p><hr id="7a2baafd-6ac3-42c9-84ba-6a4bcfa1fcd3"/><p id="6452bf8f-99b2-4864-90c5-1f8ac1425974" class=""><strong>Major depressive disorder is the most prevalent and disabling form of
+depression.</strong></p><hr id="8c6d30ff-aa35-4126-8ec8-991b4723644d"/><p id="3df8312a-12b2-4a1c-a05c-e5e6427167e1" class=""><strong>During the second wave of COVID19 in the fall of 2020, the prevalence of major depressive disorder (MDD) among Canadians aged 18 or older (defined as the proportion screening positive for MDD using the Patient Health Questionnaire-9) was 15% (13% for males and 18%
+for females).</strong></p><hr id="09ec6e3f-8d61-4b4e-9c72-24ef4e660d1d"/><p id="2652e56b-591f-46f4-995e-778543ce2f28" class=""><strong>In addition to the immediate symptoms of depression, MDD results in poor quality of life
+overall, decreased productivity, and can increase mortality from suicide. Social difficulties including
+stigma, loss of employment, and marital conflict as a result of depression can also occur.</strong></p><hr id="c402eb8a-6fb0-42a5-88f5-7c4407aeef09"/><p id="fe30d4d9-e78c-4eab-9eb2-27991cd7a9e7" class=""><strong>Women are 70% more likely than men to experience depression</strong></p><hr id="8398925e-bec4-4756-880f-f08b835a6939"/><p id="093df648-1eaa-4dab-9914-69927be45523" class=""><strong>Young adults aged 18–25 are 60% more likely to have depression than people aged 50 or older.</strong></p></div><hr id="435dcc33-60fc-48fc-9d5c-a9555819b86f"/><h3 id="1a7ca5d7-6937-4132-8a50-ece7fd15cadd" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><p id="fc0b66db-a7d1-4bda-a7ad-9860be57f5ea" class="">
+</p><ul id="c45c4bf2-05bb-49a2-af5f-885633635787" class="bulleted-list"><li style="list-style-type:disc">depressed mood</li></ul><ul id="47e09d13-ee40-419e-9fca-27babeed40e2" class="bulleted-list"><li style="list-style-type:disc">loss of interest or pleasure in regular activities</li></ul><ul id="ee848384-3a16-4a92-8394-865a33dbab08" class="bulleted-list"><li style="list-style-type:disc">decreased energy</li></ul><ul id="1343d3c4-c3de-4fcb-a679-a63e339b053a" class="bulleted-list"><li style="list-style-type:disc">feelings of guilt or low self-worth</li></ul><ul id="8103a5ae-bea3-4a41-9bff-288b797bd8bb" class="bulleted-list"><li style="list-style-type:disc">disturbed sleep or appetite</li></ul><ul id="20c2db10-15bd-41b4-b53d-09130db7a72b" class="bulleted-list"><li style="list-style-type:disc">poor concentration</li></ul></div><hr id="6ee087c5-9efc-42f4-8a34-bf6212f90eb0"/><h3 id="d5d08cb9-cd0a-4369-a6ab-2a72ca0d8ed7" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="f760233e-7bf1-450e-b0ab-fd42bfae6b4d" class=""><a href="https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057">https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057</a></p><p id="f3524992-cdea-4eba-a8f4-06f0e52acc90" class=""><a href="https://www.healthquality.va.gov/guidelines/MH/mdd/VADoDMDDCPGFINAL82916.pdf">https://www.healthquality.va.gov/guidelines/MH/mdd/VADoDMDDCPGFINAL82916.pdf</a></p><p id="af430e8c-2ea3-4e9f-82c4-530e908ebee6" class=""><a href="https://www.canada.ca/content/dam/phac-aspc/documents/services/reports-publications/health-promotion-chronic-disease-prevention-canada-research-policy-practice/vol-41-no-11-2021/symptoms-major-depressive-disorder-covid-19-pandemic-representative-sample-canadian-population.pdf">https://www.canada.ca/content/dam/phac-aspc/documents/services/reports-publications/health-promotion-chronic-disease-prevention-canada-research-policy-practice/vol-41-no-11-2021/symptoms-major-depressive-disorder-covid-19-pandemic-representative-sample-canadian-population.pdf</a></p></div></div><h2 id="0eff945d-c9b8-47a1-8b18-f3078dc89736" class=""><details open=""><summary>Seasonal affective disorder</summary></details></h2><div class="indented"><h3 id="580282ea-9097-40b7-aae5-08abf2df74d8" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="522112c4-5e46-4eaa-849d-437dac08fdf3" class=""><strong> A form of depression most often associated with fewer hours of daylight in the far northern and southern latitudes from late fall to early spring</strong></p><hr id="4b422208-21c2-4118-b24c-b4b4505fd56d"/><p id="31658d14-8ae8-4678-b96d-0117f7a648a0" class=""><strong>seasonal affective disorder (SAD)</strong>, mood disorder characterized by recurring depression in autumn and winter, separated by periods of nondepression in spring and summer.</p><hr id="804e613d-816f-4247-be1a-46ce07d330d5"/><p id="2960fb89-05b0-487b-8e54-8135a13916d4" class=""><strong>When spring comes, the symptoms generally resolve, and people with SAD feel well again.</strong></p><hr id="dc72c6c0-cc05-498a-b537-e78cfacc746d"/><p id="4bcd10a4-12f1-4ed9-b00f-5a9eebf3f745" class=""><strong>some people with SAD become euphoric during the summer. They may experience a condition known as hypomania , in which they have rapid thoughts and speech, have grandiose ideas about themselves, or become short-tempered, irritable, and impulsive.</strong></p><hr id="28ff6aec-c84b-4d82-8d1f-6b99be38ae3f"/><p id="bd5a28d6-991a-41c3-b6fe-6cbe02b7d19c" class=""><strong>SAD is estimated to affect approximately 5 percent of people in the United States and between 4 and 14 percent of people in Europe, depending on latitude.</strong></p><hr id="718ecfd9-f426-401d-97e2-338dd676994c"/><p id="1a9efc2a-74a3-4559-8069-bad5a1d77f24" class=""><strong>The condition is far less common in China and Japan.</strong></p><hr id="4b58878e-7235-4461-9066-e43349ca37c2"/><p id="a8c9ae70-9b62-42f9-af15-023e692d5585" class=""><strong>Women are more likely than men to develop SAD, especially during their reproductive years.</strong></p><hr id="08b5e481-6fdd-4766-93c7-0f430594d1ca"/><p id="bece4989-8f76-4078-84e1-86471433cf97" class=""><strong>It is about three times more common in women than it is in men.</strong></p></div><hr id="edb0f352-bd54-4999-8a7f-7bdc39d7accc"/><h3 id="78d6ffdd-1bf9-4ea5-a7db-4c34306d330b" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><ul id="0facc471-279b-407e-994c-acd6a9739e8f" class="bulleted-list"><li style="list-style-type:disc">Difficulty waking up in the morning</li></ul><ul id="735ff6cc-96d7-44c5-a0d8-5ee148b77680" class="bulleted-list"><li style="list-style-type:disc">A tendency to oversleep, to overeat, and to gain weight</li></ul><ul id="a0d135ef-ac3b-4611-b0d6-6cfff0d00954" class="bulleted-list"><li style="list-style-type:disc">A craving for carbohydrate-rich foods, such as sweets and breads</li></ul><ul id="279c8614-5b51-4195-bf88-7380bec4a72a" class="bulleted-list"><li style="list-style-type:disc">Fatigue and decreased energy, especially in the afternoon hours</li></ul><ul id="c77b7a4a-da3f-4db6-9cde-2be4349d8660" class="bulleted-list"><li style="list-style-type:disc">Difficulty concentrating and accomplishing tasks</li></ul><ul id="4b0ef7f3-f42c-4c76-a9f9-7a9a4f4c1b46" class="bulleted-list"><li style="list-style-type:disc">Withdrawal from friends, family, and social activities</li></ul><ul id="f44622ed-6a78-4fac-a918-306acf0295d4" class="bulleted-list"><li style="list-style-type:disc">depressed, pessimistic, and unable to enjoy the things that usually give them pleasure (Losing interest in activities you once enjoyed).</li></ul></div><hr id="22ee3e7c-7387-4855-be91-808f092fc330"/><h3 id="a25cdf48-f87a-44ce-b846-7ac2c0dbe268" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="03b429d0-be5f-46b8-95d7-1ba5131c58fe" class=""><a href="https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057">https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057</a></p><p id="c17de07e-8369-4861-b2d2-d39a1f363490" class=""><a href="https://www.britannica.com/science/seasonal-affective-disorder">https://www.britannica.com/science/seasonal-affective-disorder</a></p><p id="794a4056-4130-413e-8e88-a0373c2ea650" class=""><a href="https://www.mayoclinic.org/diseases-conditions/seasonal-affective-disorder/symptoms-causes/syc-20364651">https://www.mayoclinic.org/diseases-conditions/seasonal-affective-disorder/symptoms-causes/syc-20364651</a><div class="indented"><p id="005dc56f-d791-4c75-8662-96f2f5a58587" class=""><a href="https://www.nhs.uk/ipgmedia/national/Royal%20College%20of%20Psychiatrists/Assets/SeasonalAffectiveDisorder.pdf">https://www.nhs.uk/ipgmedia/national/Royal College of Psychiatrists/Assets/SeasonalAffectiveDisorder.pdf</a></p></div></p></div></div><h2 id="c4583fef-8659-49de-b0b9-ee3eab208eb5" class=""><details open=""><summary>Cyclothymic disorder</summary></details></h2><div class="indented"><h3 id="45febe37-1bba-4384-8fcc-2ac0bb5aba12" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="b0e17c67-ce84-43fa-810f-e054314c2831" class=""><strong>A disorder that causes emotional ups and downs that are less extreme than bipolar disorder</strong></p><p id="ba16f81f-39fe-449e-bb39-428fddb95433" class=""><strong>Cyclothymia symptoms are similar to those of bipolar I or II disorder, but they&#x27;re less severe.</strong></p><p id="d7e8844f-179e-4db2-8c87-5be5c73ddf81" class=""><strong>Men and women of any age can get cyclothymia, but it&#x27;s more common in women.</strong></p><hr id="4a543110-47a9-4ed3-af15-5a3788ae935c"/><p id="2e73c9f9-8896-4794-958c-d69082ebb4a1" class=""><strong>Cyclothymia has been reported to occur at rates ranging from 0.4-percent to 1-percent in the general population.</strong></p></div><hr id="1538b331-c2ea-4d20-9853-74dd229868eb"/><h3 id="e1e18ddb-0ad8-488d-9c4e-86eb80326206" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><p id="ceb5ba76-4b3a-492a-9d2b-2fbc7996dda2" class="">There is no known cause of cyclothymia. There is a possible genetic link since cyclothymia, depression, and bipolar disorder all have a tendency to run in families.</p></div><hr id="18a275fc-20cc-4bbd-bd95-dd2026194b6a"/><h3 id="17c951cb-6f40-45ae-9a47-df8c61692fae" class="block-color-red"><details open=""><summary><strong><strong>Hypomanic symptoms</strong></strong></summary></details></h3><div class="indented"><p id="2d3ef43b-29a1-4da7-b969-227763ac8601" class="">• An exaggerated feeling of happiness or well-being (euphoria)</p><p id="7e0b8a7b-6228-458a-9642-691e07b96ccb" class="">• Extreme optimism</p><p id="96936850-dcb0-4d5d-a1dc-f95f19589554" class="">• Inflated self-esteem</p><p id="6a47ec48-89b6-4f27-89a2-af9a32de34f9" class="">• Talking more than usual</p><p id="4ab1a32b-ab36-404d-8da5-a2fff51b2b03" class="">• Poor judgment that can result in risky behavior or unwise choices</p><p id="14289925-79bb-4c39-a694-72c2350b390d" class="">• Racing thoughts</p><p id="d876e41e-96d8-4e1c-b8ca-59d06fb20ed4" class="">• Irritable or agitated behavior</p><p id="818a5553-4257-4b8a-ae0f-8b8b26f4a8e7" class="">• Excessive physical activity</p><p id="c739f87d-6795-4890-9554-38175710b100" class="">• Increased drive to perform or achieve goals (work related or social)</p><p id="d4cd4eec-8929-4469-ad50-23e47ccf425a" class="">• Decreased need for sleep</p><p id="9d55792f-a6aa-468a-a18a-6391882b232f" class="">• Tendency to be easily distracted</p><p id="ffaf61bb-e640-42dc-8fc0-e1b57836dd10" class="">• Inability to concentrate</p></div><hr id="3f2bab41-e50e-4335-a257-7c099278418f"/><h3 id="8d2ca19a-9652-4b04-ad02-32a64e9a0339" class="block-color-red"><details open=""><summary>Depressive Symptoms</summary></details></h3><div class="indented"><p id="9aed451e-1a6c-4df6-9e5d-ffe87307eab5" class="">• Feeling sad, hopeless or empty</p><p id="90153f65-e9d9-4474-81ce-a927111ca02e" class="">• Tearfulness</p><p id="1df43271-e8a1-4b22-8557-3c581c7e1d06" class="">• Irritability, especially in children and teenagers</p><p id="1c2798fa-b75d-4762-a7b1-9aea92ae0d00" class="">• Loss of interest in activities once considered enjoyable</p><p id="d557a28a-3133-4853-8c22-68fdb8b7daa2" class="">• Changes in weight</p><p id="0bfd6a6f-b095-4a49-a26a-e21ef531a171" class="">• Feelings of worthlessness or guilt</p><p id="3a5cfea2-dc4e-49ab-ad1b-3dec117bfedb" class="">• Sleep problems</p><p id="dcd1ddc2-fa15-4524-a429-eb57c2897031" class="">• Restlessness</p><p id="e59ee686-5185-4e68-902e-ac334929e1cb" class="">• Fatigue or feeling slowed down</p><p id="bc310364-b105-4cdd-b978-a3f7d18aad3f" class="">• Problems concentrating</p><p id="9bd5f1d1-12c6-4315-b6ac-2fbdee9698a3" class="">• Thinking of death or suicide</p></div><h3 id="cf0c0e6d-cb18-442b-807b-5684abd67b9f" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="73f19a57-4922-4196-80f0-07e9d9eb8826" class=""><a href="https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057">https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057</a></p><p id="59951b38-8887-43d7-93fe-73ecfe2ab3b9" class=""><a href="https://www.mayoclinic.org/diseases-conditions/cyclothymia/symptoms-causes/syc-20371275">https://www.mayoclinic.org/diseases-conditions/cyclothymia/symptoms-causes/syc-20371275</a></p><p id="72bc5fbc-a1a8-4d3c-8043-6bc21d5b28e1" class=""><a href="https://www.nhs.uk/conditions/cyclothymia/">https://www.nhs.uk/conditions/cyclothymia/</a></p></div></div><h2 id="38a826a9-4054-407f-9cc5-6318bee9fe30" class=""><details open=""><summary>Premenstural dysphoric disorder (PMDD)</summary></details></h2><div class="indented"><h3 id="ff367af1-daa6-4e43-a5f3-eeea442c75f5" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="23e0fee5-b3c3-4cb3-ab85-0fd0ae2314a6" class=""><strong>Premenstrual dysphoric disorder (PMDD) is a more serious form of premenstrual syndrome (PMS).</strong></p><hr id="e5e4165a-a88d-47b3-97ee-0637aca948b1"/><p id="a9150ea7-6745-456e-b57e-be3d77cdfd0e" class=""><strong>Mood changes and irritability that occur during the premenstrual phase of a woman&#x27;s cycle and go away with the onset of menses</strong></p><hr id="320a9f6e-ce2e-4807-9e3d-b29b44a51f96"/><p id="2af771ce-725f-4e78-a00f-b6e233729a35" class=""><strong>PMDD causes extreme mood shifts that can disrupt daily life and damage relationships.</strong></p><hr id="76d9dc7b-1963-4622-8d4d-d081838a6ebe"/><p id="06e474be-d00f-4fa7-802a-12fa3b189f44" class=""><strong>PMDD affects up to 10% of women who have periods.</strong></p><hr id="632d6f51-c5c1-4e74-b879-76dc2fa17980"/><ul id="0df3bd96-249c-4f4a-9516-831091306b27" class="toggle"><li><details open=""><summary><strong>It may cause</strong></summary><ul id="94eb8927-8614-4794-88c5-181722b235f9" class="bulleted-list"><li style="list-style-type:disc">bloating</li></ul><ul id="d1042a54-26a4-4493-bb0a-49510389cadc" class="bulleted-list"><li style="list-style-type:disc"> breast tenderness </li></ul><ul id="1b1a7714-273f-48ad-b09a-5585cb75607c" class="bulleted-list"><li style="list-style-type:disc">fatigue </li></ul><ul id="313b1cde-13b4-4d0e-8219-97ec7e51d0e7" class="bulleted-list"><li style="list-style-type:disc">changes in sleep and eating habits</li></ul></details></li></ul></div><hr id="13de0462-4acf-476a-ab73-ba1aeb59bead"/><h3 id="3516e223-ace4-483c-9611-f0ca4c60d997" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><p id="3d0974b0-ba15-4f11-b9c6-0f0b12729980" class="">Researchers do not know for sure what causes PMDD or PMS. Hormonal changes throughout the menstrual cycle may play a role. A brain chemical called serotonin may also play a role in PMDD. Serotonin levels change throughout the menstrual cycle. Some women may be more sensitive to these changes.</p></div><h3 id="ee850953-e50b-418f-b1fd-cfeb0ff22961" class="block-color-red"><details open=""><summary>Who might get PMDD<strong>?</strong></summary></details></h3><div class="indented"><p id="bea68ffd-982f-4945-9359-a1aae316e619" class="">You may be more prone to PMDD if you have:</p><p id="32efdb3b-3227-4933-b83e-7d929e07e133" class="">
+</p><ul id="fb770ebd-d454-466a-b99b-1546b8f19a28" class="bulleted-list"><li style="list-style-type:disc">Anxiety or depression.</li></ul><ul id="2c40821b-e728-4847-8c6c-301fab4d4c99" class="bulleted-list"><li style="list-style-type:disc">PMS.</li></ul><ul id="3182729f-0d50-4b00-9f7e-7848bf9acf5e" class="bulleted-list"><li style="list-style-type:disc">Family history of PMS, PMDD or mood disorders.</li></ul></div><hr id="637c0d5c-1710-40b2-9d48-784bb9821e9b"/><h3 id="04ca6ce5-af0a-4e0f-8741-3936e7722438" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><p id="6ec67acf-8c5f-4440-a608-e1ef2908e222" class="">at least one of these emotional and behavioral symptoms stands out</p><p id="de875c6c-f3e0-45af-bceb-68fc89265e41" class="">
+</p><ul id="5dd264d0-9bc5-411b-a01c-5553368beec6" class="bulleted-list"><li style="list-style-type:disc">Sadness or hopelessness</li></ul><ul id="f7f45fb9-8142-4f89-91e8-d5691d87b1d4" class="bulleted-list"><li style="list-style-type:disc">Anxiety or tension</li></ul><ul id="49f21d1e-d926-43a7-9f62-1dc4d9aa2187" class="bulleted-list"><li style="list-style-type:disc">Extreme moodiness</li></ul><ul id="92c3bbe8-e3f1-45c1-a3cd-d60e2b5f8a29" class="bulleted-list"><li style="list-style-type:disc">Marked irritability or anger</li></ul><ul id="87d18d0b-6f18-413d-9c17-55ef4459e637" class="bulleted-list"><li style="list-style-type:disc">headaches</li></ul><ul id="615193ff-dc98-44d6-9cae-edbee8ef1765" class="bulleted-list"><li style="list-style-type:disc">Panic attacks</li></ul><ul id="6c408218-e882-4f63-abdb-3f7cd3ec7907" class="bulleted-list"><li style="list-style-type:disc">Lack of interest in daily activities and relationships</li></ul><ul id="ac3fa62a-7658-43a4-a28c-57699eb0d280" class="bulleted-list"><li style="list-style-type:disc">Food cravings or binge eating</li></ul><p id="4db14dba-32ae-4edf-a719-1d5eb4108e8c" class="">
+</p><p id="f54f4db2-6de5-4ac4-9858-c5f036741335" class=""><mark class="highlight-red"><strong>These symptoms improve within a few days after your period starts, but they can be severe enough to interfere with your life.</strong></mark></p></div><hr id="2c19adcc-42b5-4b07-8596-b8d9897a49ae"/><h3 id="b9ed4294-d4fb-4fdc-97fe-1410a68dadfe" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="e0a6fa38-65a3-43ad-8c9f-20567f761d54" class=""><a href="https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057">https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057</a></p><p id="63457aee-a041-47d6-bf2f-f8c8cf4c57d8" class=""><a href="https://www.mayoclinic.org/diseases-conditions/premenstrual-syndrome/expert-answers/pmdd/faq-20058315">https://www.mayoclinic.org/diseases-conditions/premenstrual-syndrome/expert-answers/pmdd/faq-20058315</a></p><p id="2b3e4343-df1b-415e-b4a1-65ac62dabab5" class=""><a href="https://my.clevelandclinic.org/health/articles/9132-premenstrual-dysphoric-disorder-pmdd">https://my.clevelandclinic.org/health/articles/9132-premenstrual-dysphoric-disorder-pmdd</a></p><p id="2fea311a-587a-4860-9078-fa58e23634ce" class=""><a href="https://www.womenshealth.gov/menstrual-cycle/premenstrual-syndrome/premenstrual-dysphoric-disorder-pmdd">https://www.womenshealth.gov/menstrual-cycle/premenstrual-syndrome/premenstrual-dysphoric-disorder-pmdd</a></p></div></div><h2 id="db158a1d-bff3-4d5b-93b9-2b1af1000c73" class=""><details open=""><summary>Persistent depressive disorder (Dysthymia)</summary></details></h2><div class="indented"><h3 id="a8816a98-f663-476b-9f76-90e59672f716" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="0122a7d2-1be7-494d-a4dc-9f1a90798e5d" class=""><strong>A long-term (chronic) form of depression</strong></p><hr id="ca3d7ece-0134-48ce-a3e3-9da9aa825aea"/><p id="c8b6d7b7-506b-49dc-9a2f-eef592e4f5d3" class=""><strong>PDD can happen to anyone at any age. In fact, 3% or more of the U.S. population experiences it at some point in their lives.</strong></p><hr id="023430be-dffb-46fa-89b0-1ea52f74b2e0"/><p id="f0b0de69-6b9e-48cb-aaf0-25c0f65db8d7" class=""><strong>PDD is more common in women and in people who have relatives with the same condition.</strong></p><hr id="70215c3b-8080-4f61-8292-3897d60bcb2f"/><p id="8b4da71f-e198-40b8-99ac-2fe77a5a5145" class=""><strong>Most people with PDD also have an episode of major depression at least once at some point, which is sometimes called “double depression.”</strong></p><hr id="3ae1c548-f2b2-4d09-a889-70e5008e51e1"/><p id="b8ecaaa2-3b4a-477d-b191-66d22a56da12" class=""><strong>Symptoms caused by persistent depressive disorder can vary from person to person. When persistent depressive disorder starts before age 21, it&#x27;s called early onset; if it starts at age 21 or older, it&#x27;s called late onset.</strong></p></div><hr id="bb082272-c19c-44e9-b032-720cba5b3b33"/><h3 id="a0b08a4d-2cbd-455e-8a7e-ec73d109b35e" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><p id="8748f00d-8bbe-4f59-9d0f-5914fa5d3ca4" class=""><span style="border-bottom:0.05em solid"><strong>Scientists don’t fully understand what causes PDD, but it might be some of the following: </strong></span></p><p id="4ac58eea-d828-4ce7-9c0a-a81a5a7b7f32" class="">
+</p><p id="6226865a-d43c-4c8f-ad9c-d3117f954fc6" class="">• <strong>Biological differences.</strong> People with persistent depressive disorder may have physical changes in their brains. The significance of these changes is still uncertain, but they may eventually help pinpoint causes.</p><p id="dbd1b353-f5c0-4cfe-9834-9ab0ba7e9d30" class="">• <strong>Brain chemistry.</strong> Neurotransmitters are naturally occurring brain chemicals that likely play a role in depression. Recent research indicates that changes in the function and effect of these neurotransmitters and how they interact with neurocircuits involved in maintaining mood stability may play a significant role in depression and its treatment.</p><p id="55597f2b-574a-4703-b33a-8ebedd6688ce" class="">• <strong>Inherited traits.</strong> Persistent depressive disorder appears to be more common in people whose blood relatives also have the condition. Researchers are trying to find genes that may be involved in causing depression.</p><p id="aa06a77e-dfad-4bcd-b7e8-b557f7e2a11a" class="">• <strong>Life events.</strong> As with major depression, traumatic events such as the loss of a loved one, financial problems or a high level of stress can trigger persistent depressive disorder in some people</p></div><hr id="a2772d09-0867-434e-ab66-b95cb73b2715"/><h3 id="3b9f65bc-18b0-4d31-a291-2bccb898f91e" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><p id="ddb7e859-e21d-4841-9ffd-48ba68ae9d1c" class="">• Loss of interest in daily activities</p><p id="19462441-408f-46bd-bd57-b502b791b163" class="">• Sadness, emptiness or feeling down</p><p id="811342a8-b639-4ade-8900-637a3b9546e9" class="">• Hopelessness</p><p id="745bfb43-8f57-41ea-b934-20ef3487d2a3" class="">• Tiredness and lack of energy</p><p id="85f9c9a6-2be5-46ac-bc9d-7716d8893831" class="">• Low self-esteem, self-criticism or feeling incapable</p><p id="38ccf12e-26b6-42e1-9c74-71300aa66b01" class="">• Trouble concentrating and trouble making decisions</p><p id="865cae93-869e-4ebb-89cc-75a40b1daa34" class="">• Irritability or excessive anger</p><p id="7c34ab52-4f74-459c-b9ba-f55bcd82e9ba" class="">• Decreased activity, effectiveness and productivity</p><p id="95553904-31db-403d-8c50-9010fc3b446f" class="">• Avoidance of social activities</p><p id="37f9772d-036b-4eaf-bfc2-c7bb9a3f55c8" class="">• Feelings of guilt and worries over the past</p><p id="4773d9b7-6d50-425c-8105-bcdd27cc5cc4" class="">• Poor appetite or overeating</p><p id="2e57698d-c9ef-4972-9c27-5c0ca62e5f20" class="">• Sleep problems</p></div><hr id="1ce4e5e3-a700-4d05-9511-d674ee8e8511"/><h3 id="a4afdf5c-95b9-4180-8d98-d2f05a91752e" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="071bf3c3-780c-425c-bc91-c57dfc02538e" class=""><a href="https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057">https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057</a></p><p id="dc227ce2-4d9c-4467-a265-29c4b90d0af3" class=""><a href="https://www.mayoclinic.org/diseases-conditions/persistent-depressive-disorder/symptoms-causes/syc-20350929">https://www.mayoclinic.org/diseases-conditions/persistent-depressive-disorder/symptoms-causes/syc-20350929</a></p><p id="2c33f557-bf34-43cd-935c-20d09413a242" class=""><a href="https://my.clevelandclinic.org/health/diseases/9292-persistent-depressive-disorder-pdd">https://my.clevelandclinic.org/health/diseases/9292-persistent-depressive-disorder-pdd</a></p><p id="a0fcc2ed-8248-4213-8c35-84c79a50f614" class=""><a href="https://www.mayoclinic.org/diseases-conditions/persistent-depressive-disorder/diagnosis-treatment/drc-20350935">https://www.mayoclinic.org/diseases-conditions/persistent-depressive-disorder/diagnosis-treatment/drc-20350935</a></p><p id="0e5b4992-087f-4772-a65a-12202b08bafa" class="">
+</p></div></div><h2 id="eb133230-2551-45f1-aa8f-e58e02ac0263" class=""><details open=""><summary><span style="border-bottom:0.05em solid">Distruptive mood dysregulation disorder</span></summary></details></h2><div class="indented"><h3 id="3f488fae-d761-43af-b461-105667214b1d" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="a4324468-ce6f-4f1f-8676-6e74416b9d6e" class=""> A disorder of chronic, severe and persistent irritability in children that often includes frequent temper outbursts that are inconsistent with the child&#x27;s developmental age</p></div><hr id="1c269a07-c117-4585-8945-0596994de511"/><h3 id="ff2b530f-50c0-452b-a7f8-85943745b1c4" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><p id="5c8096a7-e74f-401c-96e9-9007319531ce" class="">DMDD symptoms typically begin before the age of 10, but the diagnosis is not given to children under 6 or adolescents over 18. A child with DMDD experiences:</p><p id="be0745a3-e639-4311-b375-7661011c2cb6" class="">
+</p><p id="985b7603-975c-4dca-bfb1-72a35e771e3e" class="">• Irritable or angry mood most of the day, nearly every day</p><p id="e3bd629c-d29e-43f7-8819-f42dcd908a70" class="">• Severe temper outbursts (verbal or behavioral) at an average of three or more times per week that are out of keeping with the situation and the child’s developmental level</p><p id="009e4d92-69f9-4c82-a023-2c92e9bfddc8" class="">• Trouble functioning due to irritability in more than one place (e.g., home, school, with peers)</p><p id="f9c30cd4-b4ab-41cb-b8d3-bbfdfaadc342" class=""><div class="indented"><p id="16d2947c-20be-4b87-bbb3-6b7ac47828b3" class=""> </p></div></p></div><hr id="5d9bda28-f1f2-42a9-a48b-0693f2d1e716"/><h3 id="5d568cc8-316b-4628-9e59-b7823185d7c9" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="3b6e2c5c-4a68-4ff8-b956-158eddf3fe49" class=""><a href="https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057">https://www.mayoclinic.org/diseases-conditions/mood-disorders/symptoms-causes/syc-20365057</a></p><p id="c9f6ab1a-ae30-4083-bdb8-38d88ba724df" class=""><a href="https://www.nimh.nih.gov/health/topics/disruptive-mood-dysregulation-disorder-dmdd/disruptive-mood-dysregulation-disorder">https://www.nimh.nih.gov/health/topics/disruptive-mood-dysregulation-disorder-dmdd/disruptive-mood-dysregulation-disorder</a></p></div></div></div></article></body></html>

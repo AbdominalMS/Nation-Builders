@@ -1,0 +1,730 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Anxiety disorders</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="62fb2427-352f-48ee-97cf-af4838db5294" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1608555307638-992062b31329?ixlib=rb-1.2.1&amp;q=80&amp;cs=tinysrgb&amp;fm=jpg&amp;crop=entropy" style="object-position:center 50%"/><h1 class="page-title">Anxiety disorders</h1><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Done</span></td></tr><tr class="property-row property-row-date"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesDate"><path d="M10.8889,5.5 L3.11111,5.5 L3.11111,7.05556 L10.8889,7.05556 L10.8889,5.5 Z M12.4444,1.05556 L11.6667,1.05556 L11.6667,0 L10.1111,0 L10.1111,1.05556 L3.88889,1.05556 L3.88889,0 L2.33333,0 L2.33333,1.05556 L1.55556,1.05556 C0.692222,1.05556 0.00777777,1.75556 0.00777777,2.61111 L0,12.5 C0,13.3556 0.692222,14 1.55556,14 L12.4444,14 C13.3,14 14,13.3556 14,12.5 L14,2.61111 C14,1.75556 13.3,1.05556 12.4444,1.05556 Z M12.4444,12.5 L1.55556,12.5 L1.55556,3.94444 L12.4444,3.94444 L12.4444,12.5 Z M8.55556,8.61111 L3.11111,8.61111 L3.11111,10.1667 L8.55556,10.1667 L8.55556,8.61111 Z"></path></svg></span>Due Date</th><td><time>@October 9, 2022</time></td></tr></tbody></table></header><div class="page-body"><h1 id="d52a5f30-0ead-47b9-8479-abec2782f015" class="">Common anxiety disorders</h1><h2 id="6f043828-7de9-4149-9f96-eb56b6ec5566" class=""><details open=""><summary>generalized anxiety disorder (GAD)</summary></details></h2><div class="indented"><h3 id="c992b7f6-f5b9-4ab5-b23f-2deeb54c2714" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><ul id="4920a6bd-a9d8-4f12-aa63-957f7a8d244a" class="bulleted-list"><li style="list-style-type:disc">Feeling restless, keyed up, or on edge</li></ul><ul id="9196a2fc-f7ef-421c-a813-c99360fc74b1" class="bulleted-list"><li style="list-style-type:disc">being easily tired </li></ul><ul id="25619092-cab7-4153-8e68-0f58af5022b9" class="bulleted-list"><li style="list-style-type:disc">having difficulty concentrating, or having your mind going blank</li></ul><ul id="1ce341be-1742-4917-8013-4fe323ac8d3e" class="bulleted-list"><li style="list-style-type:disc">feeling irritable </li></ul><ul id="52356f86-113f-4ad4-a272-7d2bea465d2a" class="bulleted-list"><li style="list-style-type:disc">having tense, tight or sore muscles </li></ul><ul id="50b98a9d-8b9f-4c0d-8c7e-6e4a8d4ec4e0" class="bulleted-list"><li style="list-style-type:disc">having difficulty sleeping; either difficulty falling or staying asleep, or restless unsatisfying sleep</li></ul></div><hr id="099d06c2-2817-4bbe-acb6-fe84140c47f5"/><h3 id="f187157a-ccf3-446d-833f-b89886e18006" class="block-color-red"><details open=""><summary><mark class="highlight-red">Causes</mark></summary></details></h3><div class="indented"><p id="d427f16f-4470-4aa8-a2d5-2cea96e845a0" class=""><span style="border-bottom:0.05em solid"><strong>The exact cause of GAD is not fully understood, although it&#x27;s likely that a combination of several factors plays a role.</strong></span></p><ul id="d867487b-e8fa-4263-8be5-f6a380fccc74" class="bulleted-list"><li style="list-style-type:disc">the genes you inherit from your parents – you&#x27;re estimated to be 5 times more likely to develop GAD if you have a close relative with the condition.</li></ul><ul id="4dbe3dbd-3ce7-4b18-a6ff-b4957719d069" class="bulleted-list"><li style="list-style-type:disc">having a history of stressful or traumatic experiences, such as domestic violence, child abuse or bullying.</li></ul><ul id="edb7a50c-fbe8-4570-9230-0782c297efc4" class="bulleted-list"><li style="list-style-type:disc"> having a painful long-term health condition, such as arthritis.</li></ul><ul id="dd901709-d776-451f-8f37-7f2a78d113c1" class="bulleted-list"><li style="list-style-type:disc"> having a history of drug or alcohol.</li></ul></div><hr id="1e9198ee-76d8-41d6-9643-00b9bdc168fb"/><h3 id="f1744b62-9299-4a6d-ab6c-174cd4d24838" class="block-color-red"><details open=""><summary><mark class="highlight-red">More information</mark></summary></details></h3><div class="indented"><ul id="678357ab-e7c9-4bcd-b6d7-09ff8aead1f3" class="bulleted-list"><li style="list-style-type:disc">People with it have persistent worry and anxiety symptoms for at least a six-month period.</li></ul><ul id="1e06eb19-3449-4050-9026-311671e2ca40" class="bulleted-list"><li style="list-style-type:disc">It affects women more than men.<ul id="193c2bc8-4886-4205-ba94-254e2f6f659b" class="bulleted-list"><li style="list-style-type:circle">Women were more likely to experience mild, moderate, or severe symptoms of anxiety than men. (<strong>Centers for Disease Control and Prevention, 2019)</strong></li></ul></li></ul><ul id="f1167c74-7a40-4a21-b505-2f403860cff2" class="bulleted-list"><li style="list-style-type:disc">Over 15% of adults experienced symptoms of anxiety that
+were either mild, moderate, or severe in 2019 (<strong>Centers for Disease Control and Prevention)</strong></li></ul><ul id="241427b2-f2d6-4ab1-908b-c212277143df" class="bulleted-list"><li style="list-style-type:disc">The percentage of adults who experienced mild, moderate, or severe symptoms of anxiety was highest among those aged 18–29 and decreased with age. (<strong>Centers for Disease Control and Prevention, 2019)</strong></li></ul><ul id="a53f15f7-c821-499b-a32a-a624bcdc015e" class="bulleted-list"><li style="list-style-type:disc">It is often accompanied by other conditions, such as depression, panic disorder, social anxiety disorder. and substance abuse.</li></ul></div><hr id="d5f816a7-b8fe-4604-917e-b541ce303179"/><h3 id="a5b484d3-9b0a-4365-8f36-1205f39eaa32" class="block-color-red"><details open=""><summary><mark class="highlight-red"><strong>Sources</strong></mark></summary></details></h3><div class="indented"><p id="205b9c8e-85ab-4d47-81f6-14ff30c622bb" class=""><a href="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294.html">https://www.britannica.com/science/anxiety-disorder</a></p><p id="90945c66-18bc-48f1-891c-591626adf9a5" class=""><a href="https://www.cdc.gov/nchs/data/databriefs/db378-H.pdf">https://www.cdc.gov/nchs/data/databriefs/db378-H.pdf</a></p><p id="fe4a486a-c55a-4af6-85b9-ee5195c97477" class=""><a href="https://crufad.org/wp-content/uploads/2017/01/crufad_GADmanual.compressed.pdf">https://crufad.org/wp-content/uploads/2017/01/crufad_GADmanual.compressed.pdf</a></p></div></div><h2 id="333d9824-6650-4697-90e0-3956522f0bcb" class=""><details open=""><summary>Obsessive-compulsive disorder (OCD)</summary></details></h2><div class="indented"><h3 id="9d4db9ae-0bfc-4e08-a241-5b95d8a2cdc1" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><p id="f14ee1b1-2143-455e-aa84-689a558c1fca" class=""><mark class="highlight-gray"><em><strong>Obsessions are accompanied by compulsions in approximately 80 percent of cases. Compulsions are urges or impulses to commit repetitive acts that are apparently meaningless, stereotyped, or ritualistic. </strong></em></mark></p><hr id="e780f264-0a26-4bf0-b944-b469de1bcef6"/><p id="4af92dcf-fa70-41fc-838a-3e66e14e93b9" class=""><mark class="highlight-gray"><em><strong>It affects from two to three percent of the general population equally among males and females.</strong></em></mark></p><hr id="c0c71a48-a799-41bd-9ffc-55a592bd0991"/><p id="ee52b97d-c64f-4a59-8fae-47c0306b7480" class=""><mark class="highlight-gray"><em><strong>It doesn’t appear among a specific age group, it can first appear at any age.</strong></em></mark></p><hr id="c98a9a54-d55f-45d2-ad7f-fc8f5ab23f9c"/><p id="b420c80f-f500-4323-9a28-c76d1d1a274c" class=""><em><strong><mark class="highlight-gray">The highest rates of the condition occur in high-stress groups, such as those who are young, divorced, or unemployed.</mark></strong></em></p><hr id="609de7bd-a6e9-4aa6-bef2-308d143ee751"/><p id="da2f6bfc-09a4-41e2-b8ea-b506873aa4bb" class=""><mark class="highlight-gray"><em><strong>The types of obsessions and compulsions you experience can also change over time.</strong></em></mark></p></div><hr id="57b3a145-0831-42e8-b6e0-2b3847186870"/><h3 id="d532f160-3e13-45ef-8797-93e8f46ec560" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><ul id="9b040c09-9b77-4a99-ac58-81d2d0df30cd" class="bulleted-list"><li style="list-style-type:disc">family history – you&#x27;re more likely to develop OCD if a family member has it, possibly because of your genes</li></ul><ul id="40b42682-645e-4c82-9e4b-a7fdb5df3008" class="bulleted-list"><li style="list-style-type:disc">differences in the brain – some people with OCD have areas of unusually high activity in their brain or low levels of a chemical called serotonin</li></ul><ul id="ee94905d-730a-43e6-a682-9ef7d62a9228" class="bulleted-list"><li style="list-style-type:disc">life events – OCD may be more common in people who have been bullied, abused or neglected, and it sometimes starts after an important life event, such as childbirth or a bereavement</li></ul><ul id="8a0a9b59-4d8a-474d-814f-948ce03c1a48" class="bulleted-list"><li style="list-style-type:disc">personality – neat, meticulous, methodical people with high personal standards may be more likely to develop OCD, also people who are generally quite anxious or have a very strong sense of responsibility for themselves and others</li></ul></div><hr id="dbbc29f0-d38f-4b48-bc29-b27c7935bc6b"/><h3 id="4c6e6706-e761-4792-a74e-74e3afd117cd" class="block-color-red"><details open=""><summary>Obsession Symptoms</summary></details></h3><div class="indented"><ul id="a3d52fa0-7d1a-4b6b-8915-27dc1fdf2ed9" class="bulleted-list"><li style="list-style-type:disc">Fear of deliberately harming yourself or others – for example, fear you may attack someone else, such as your children</li></ul><ul id="5b8c146e-7cef-42ac-8bae-d85c86376b51" class="bulleted-list"><li style="list-style-type:disc">Fear of harming yourself or others by mistake – for example, fear you may set the house on fire by leaving the cooker on</li></ul><ul id="5505ee60-a496-4a29-9dab-69862f1c526f" class="bulleted-list"><li style="list-style-type:disc">Fear of being contaminated by touching objects others have touched</li></ul><ul id="60b0fa88-5b01-4e4b-8bb3-de1a86bb4fee" class="bulleted-list"><li style="list-style-type:disc">Doubts that you&#x27;ve locked the door or turned off the stove</li></ul><ul id="97b2548e-9ef1-4339-b37f-a5617c392156" class="bulleted-list"><li style="list-style-type:disc">Intense stress when objects aren&#x27;t orderly or facing a certain way</li></ul><ul id="ff6a494f-5acf-41b7-8e94-d530d291621f" class="bulleted-list"><li style="list-style-type:disc">Images of driving your car into a crowd of people</li></ul><ul id="fafe42d3-91e1-4fc7-9a66-9b767dbb4d2c" class="bulleted-list"><li style="list-style-type:disc">Thoughts about shouting obscenities or acting inappropriately in public</li></ul><ul id="5cd8927d-7007-4746-a1bc-fbd538c50fce" class="bulleted-list"><li style="list-style-type:disc">Unpleasant sexual images</li></ul><ul id="b46aee7b-c317-4dd4-9ebb-5457803aaf39" class="bulleted-list"><li style="list-style-type:disc">Avoidance of situations that can trigger obsessions, such as shaking hands</li></ul></div><hr id="2d993827-0c0d-40b3-924e-43b602d0ec1f"/><h3 id="f8da6df2-d9eb-40af-80c7-cbf9fc92de14" class="block-color-red"><details open=""><summary>Compulsive symptoms</summary></details></h3><div class="indented"><ul id="92453a17-3007-4d66-90d4-c289d0e97c88" class="bulleted-list"><li style="list-style-type:disc">Hand-washing until your skin becomes raw</li></ul><ul id="0d8a7d5e-c00a-490e-9692-691fcadf450f" class="bulleted-list"><li style="list-style-type:disc">Checking doors repeatedly to make sure they&#x27;re locked</li></ul><ul id="0dd8d22c-c099-447c-b01e-345e41631608" class="bulleted-list"><li style="list-style-type:disc">Checking the stove repeatedly to make sure it&#x27;s off</li></ul><ul id="59e90471-df55-4e66-9985-9392689ae7bc" class="bulleted-list"><li style="list-style-type:disc">Counting in certain patterns</li></ul><ul id="00732bb3-f2c5-4783-83e8-b0df9cf12d5a" class="bulleted-list"><li style="list-style-type:disc">Silently repeating a prayer, word or phrase</li></ul><ul id="b8a658f3-467a-425f-9f56-4a921ff088f8" class="bulleted-list"><li style="list-style-type:disc">Arranging your canned goods to face the same way</li></ul></div><hr id="0cb07bcf-9004-405e-acb3-9585680f9cb5"/><h3 id="fd0cd118-fc7b-4293-b7fc-b441365caf67" class="block-color-red"><details open=""><summary><mark class="highlight-red">Remember that</mark></summary></details></h3><div class="indented"><p id="d127dcf3-e03e-4375-b68a-f7fd08e65816" class=""><mark class="highlight-gray"><em><strong>There&#x27;s a difference between being a perfectionist — someone who requires flawless results or performance, for example — and having OCD thoughts aren&#x27;t simply excessive worries about real problems in your life or liking to have things clean or arranged in a specific way.</strong></em></mark></p></div><hr id="02a5fbb1-1371-4c52-9851-c5dfb5c1b38b"/><h3 id="59284958-b4ba-4026-a7a0-e74a755ca2c3" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="13a2d7fe-0f11-4c63-87aa-3f3a47669302" class=""><a href="https://www.britannica.com/science/obsessive-compulsive-disorder">https://www.britannica.com/science/obsessive-compulsive-disorder</a></p><p id="3af92b0e-fd8f-4c83-a1e0-4ec6dfdb6ed5" class=""><a href="https://www.mayoclinic.org/diseases-conditions/obsessive-compulsive-disorder/symptoms-causes/syc-20354432">https://www.mayoclinic.org/diseases-conditions/obsessive-compulsive-disorder/symptoms-causes/syc-20354432</a></p><p id="13d6edd4-4bd0-4904-a1b8-dfe1d29386dd" class=""><a href="https://www.nhs.uk/mental-health/conditions/obsessive-compulsive-disorder-ocd/overview/">https://www.nhs.uk/mental-health/conditions/obsessive-compulsive-disorder-ocd/overview/</a></p></div></div><h2 id="f2bf085a-7b6e-4758-8494-d8362d9ae43f" class=""><details open=""><summary>Post-traumatic stress disorder (PTSD)</summary></details></h2><div class="indented"><h3 id="4eea6604-7381-46b7-bce2-9ff77b50de5e" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><ul id="3ac0b084-e94c-4d91-8b96-67bcd00046e9" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><em><strong>Anyone can develop PTSD at any age</strong></em></mark></li></ul><ul id="69ce8f5e-5525-4c3f-9ed8-9b9775c76ab8" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><em><strong>To meet the criteria for PTSD, symptoms must last longer
+than 1 month, and they must be severe enough to interfere with aspects of daily life,
+such as relationships or work. The symptoms also must be unrelated to medication,
+substance use, or other illness.</strong></em></mark></li></ul><ul id="a3967144-7da8-4697-b5b1-b53616de3bc6" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><em><strong>emotional condition that sometimes follows a traumatic event, particularly an event that involves actual or threatened death or serious bodily injury to oneself or others and that creates intense feelings of fear, helplessness, or horror.</strong></em></mark></li></ul><ul id="63010991-a993-4b81-9807-5654f7f2494b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><em><strong>estimated 10 percent of women and 5 percent of men experience PTSD at some point in their life.</strong></em></mark></li></ul><ul id="baa72e80-4301-4b65-9129-8b7a128e6718" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><em><strong>The risk for developing PTSD varies greatly with different kinds of trauma</strong></em></mark></li></ul><ul id="eaa1000e-7192-45de-8b0c-c245b34d01fa" class="toggle"><li><details open=""><summary><mark class="highlight-gray"><em><strong>Women are especially likely to develop PTSD following rape
+ or other forms of sexual assault.</strong></em></mark></summary><p id="95ca2b41-bee8-412f-8176-3f7ad06518ae" class="">Women are more likely than men to develop PTSD.</p></details></li></ul><ul id="28b98206-d97c-4984-a8c4-d3bc6ab3464c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><em><strong>Many people who have PTSD also have another mental health problem
+— like depression, anxiety, alcohol and drug abuse, or thinking about
+harming themselves or others. It’s also common to have problems at work, in
+relationships, or with your physical health.</strong></em></mark></li></ul></div><hr id="aef10aa8-b784-46d5-95d6-e90861625796"/><h3 id="ed399e3b-fb35-427f-b669-325a792d55b5" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><ul id="264f7b7d-3bd9-44e1-a026-1200cc5d4faf" class="bulleted-list"><li style="list-style-type:disc">Combat and other military experiences</li></ul><ul id="71bbeac9-3d9b-4d5a-9c50-bb65beba5270" class="bulleted-list"><li style="list-style-type:disc">Sexual or physical assault</li></ul><ul id="839f31bb-4b8d-4bb2-aae3-c54e49483da8" class="bulleted-list"><li style="list-style-type:disc">Learning about the violent or accidental death or injury of a loved one</li></ul><ul id="92109a48-00ea-45c7-b12c-0c60068b44ad" class="bulleted-list"><li style="list-style-type:disc">Child sexual or physical abuse</li></ul><ul id="cd7825f8-c233-41a8-b97d-85fd77940fa0" class="bulleted-list"><li style="list-style-type:disc">Serious accidents, like a car wreck</li></ul><ul id="8dab9c1e-54a4-4e39-9512-c4296be5e347" class="bulleted-list"><li style="list-style-type:disc">Natural disasters, like a fire, tornado, hurricane, flood, or earthquake</li></ul><ul id="f9f6c977-dc9e-4da6-b2da-a231f16ebd6a" class="bulleted-list"><li style="list-style-type:disc">Terrorist attacks</li></ul></div><hr id="add6ebe5-bc0e-4de4-b8fc-e413a17c608d"/><h3 id="749090a5-bcfe-447c-a8f9-98d0902fac0e" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><ul id="903daaa8-2ff5-40ec-b840-88f6201d6e06" class="toggle"><li><details open=""><summary>Reliving the event</summary><p id="ef6b2b40-b3d5-49fc-9a72-4abebb6d1a00" class="">unwelcome memories about the trauma can come up at any time. They can
+feel very real and scary, as if the event is happening again. This is called a
+flashback. You may also have nightmares.
+Memories of the trauma can happen because of a trigger — something that
+reminds you of the event. For example, seeing a news report about a disaster
+may trigger someone who lived through a hurricane. Or hearing a car backfire
+might bring back memories of gunfire for a combat Veteran.</p></details></li></ul><ul id="a0994d58-0b71-4795-8bcc-fef4439fb267" class="toggle"><li><details open=""><summary>Avoiding things that remind you of the event</summary><p id="2cbe6095-6d11-49c1-8964-2fee7bba168a" class="">You may try to avoid certain people or situations that remind you of the event.
+For example, someone who was assaulted on the bus might avoid taking
+public transportation. Or a combat Veteran may avoid crowded places like
+shopping malls because it feels dangerous to be around so many people.
+You may also try to stay busy all the time so you don’t have to talk or think
+about the event.</p></details></li></ul><ul id="95c7e1b7-2d5e-4119-882c-a9c1a7a267dd" class="toggle"><li><details open=""><summary>Having more negative thoughts and feelings than before</summary><p id="ea09e254-0f5a-4b5a-83ec-9b07a1d3b031" class="">You may feel more negative than you did before the trauma. You might be
+sad or numb — and lose interest in things you used to enjoy, like spending
+time with friends. You may feel that the world is dangerous and you can’t trust
+anyone. It may be hard for you to feel or express happiness, or other positive
+emotions.
+You might also feel guilt or shame about the traumatic event itself. For example,
+you may wish you had done more to keep it from happening.</p></details></li></ul><ul id="507486a6-18e8-44be-9286-3c9367b0a53d" class="toggle"><li><details open=""><summary>Feeling on edge</summary><p id="dd98878d-e8cd-479a-9e62-dc1f0bd2b218" class="">It’s common to feel jittery or “keyed up” — like it’s hard to relax. This is called
+hyperarousal. You might have trouble sleeping or concentrating, or feel like
+you’re always on the lookout for danger. You may suddenly get angry and
+irritable — and if someone surprises you, you might startle easily.
+You may also act in unhealthy ways, like smoking, abusing drugs and alcohol, or
+driving aggressively.</p></details></li></ul><p id="78709f47-cdb1-4550-8bef-5a6474146039" class="">       </p></div><hr id="672d6313-8efa-49ea-8bd0-b9491c3b7efe"/><h3 id="4897d5c8-2f9d-4c72-872e-b39b28cd08dd" class="block-color-red"><details open=""><summary>Why do some people develop PTSD
+and other people do not?</summary></details></h3><div class="indented"><p id="fdf1b7a6-9907-409a-a816-40bbe69806c5" class="block-color-gray"><em><strong>Not everyone who lives through a dangerous event develops PTSD—many factors
+play a part. Some of these factors are present before the trauma; others become
+important during and after a traumatic event.</strong></em></p><p id="9a87403c-2f9c-4c50-9de2-a83f4622e214" class="block-color-gray">
+<em><strong>Risk factors that may increase the likelihood of developing PTSD include:
+⊲ Exposure to dangerous events or traumas
+⊲ Getting hurt or seeing people hurt or killed
+⊲ Childhood trauma
+⊲ Feeling horror, helplessness, or extreme fear
+⊲ Having little or no social support after the event
+⊲ Dealing with extra stress after the event, such as loss of a loved one, pain and injury,
+or loss of a job or home
+⊲ Having a personal history or family history of mental illness or substance use</strong></em></p></div><h3 id="5b271147-af4a-4ab4-8ff3-7489a3a09238" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="8a6f25d3-a311-4928-b7d0-631a2fad3b38" class=""><a href="https://www.britannica.com/science/post-traumatic-stress-disorder">https://www.britannica.com/science/post-traumatic-stress-disorder</a></p><p id="45990078-a2c3-498e-a1b8-75a468b0b82c" class=""><a href="https://www.ptsd.va.gov/publications/print/understandingptsd_booklet.pdf">https://www.ptsd.va.gov/publications/print/understandingptsd_booklet.pdf</a></p><p id="ce77aef6-70ed-4235-bb37-e4318cee52fc" class=""><a href="https://www.nimh.nih.gov/sites/default/files/documents/health/publications/post-traumatic-stress-disorder-ptsd/post-traumatic-stress-disorder.pdf">https://www.nimh.nih.gov/sites/default/files/documents/health/publications/post-traumatic-stress-disorder-ptsd/post-traumatic-stress-disorder.pdf</a></p></div></div><h2 id="aa62b0a4-2e39-4c96-a1cc-36429d388bfe" class=""><details open=""><summary>Social anxiety disorder (SAD)</summary></details></h2><div class="indented"><h3 id="845f4e43-eedb-482b-bca2-f762d8dcac1b" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><ul id="4ae9d22f-a7f4-44e0-bc2b-8f96bdea9e48" class="bulleted-list"><li style="list-style-type:disc">A type of anxiety disorder characterized by a fear of interacting with people, due to worries over the possibility of being negatively scrutinized and judged by them.</li></ul><ul id="768c29ec-d3a0-4616-80d1-babcc7f03482" class="bulleted-list"><li style="list-style-type:disc">Social anxiety disorder is seen in children of all ages, but it starts more often during the teenage years.</li></ul><ul id="b922201a-d3f3-4492-90b6-eacfa36a7bb3" class="bulleted-list"><li style="list-style-type:disc">Research suggests that about 7 percent of Americans are affected</li></ul><ul id="2d50aad2-b96f-4ae4-ad5c-6696d19e3a36" class="bulleted-list"><li style="list-style-type:disc">it has an early age of onset—by age 11 years in about 50% and by age 20 years in about 80% of individuals</li></ul><ul id="d4077fa5-100f-42eb-933b-d9b731dd6781" class="bulleted-list"><li style="list-style-type:disc">Without treatment, social anxiety disorder can last for many years or a lifetime and prevent a person from reaching his or her full potential</li></ul><ul id="0dc3b0ff-397f-4bbd-aa90-399b9caa38fd" class="bulleted-list"><li style="list-style-type:disc">prevalence of social anxiety disorder among adults was higher for females (8.0%) than for males (6.1%) [2001 - 2003]</li></ul><ul id="a6f6d762-c80d-4d91-873e-0bf73fcf0d31" class="bulleted-list"><li style="list-style-type:disc">• The prevalence of social anxiety disorder among adolescents was higher for females (11.2%) than for males (7.0%). [2001 - 2004]<figure id="c1e7cb39-3cd0-470b-91db-501146e9cab8" class="image"><a href="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-prevalence-of.png"><img style="width:1200px" src="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-prevalence-of.png"/></a></figure><figure id="5e0ecd87-86ca-4e24-99bc-3ec46d939eb0" class="image"><a href="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-severity-of-so.png"><img style="width:1200px" src="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-severity-of-so.png"/></a></figure><figure id="ed2f0e41-7442-4583-9b12-54ca6d3b99cf" class="image"><a href="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/lifetime-prevalence-of-s.png"><img style="width:1200px" src="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/lifetime-prevalence-of-s.png"/></a></figure></li></ul></div><hr id="f6775e10-79d5-4834-ad48-c604ca98c57b"/><h3 id="ec27be96-288f-49f0-b53f-ee31d7fddf68" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><p id="cd53229e-5165-4285-8654-3558a0db2541" class="">Researchers have
+found that several parts of the brain are involved in fear and anxiety.</p><p id="ff72123c-9784-4dc3-b258-e6e4716d3b85" class="">
+</p><p id="53b2b9bd-bce6-48d4-8ed6-b095049a4e9a" class="">Some researchers think that misreading of others’ behavior may play a role in
+causing or worsening social anxiety. For example, you may think that people
+are staring or frowning at you when they truly are not.</p><p id="ae8b59c1-3a37-4468-a9d6-762d0dc7f630" class="">
+</p><p id="3eeed0d8-e9a1-4058-aed8-ba485d9a4478" class="">Underdeveloped social skills are another possible contributor to social anxiety. For example, if you have underdeveloped social skills, you may feel discouraged after
+talking with people and may worry about doing it in the future.</p></div><hr id="ae340c78-5031-4007-96b2-84d790cf73e7"/><h3 id="a565cd30-10ae-4ace-bfd5-41468b9f076c" class="block-color-red"><details open=""><summary> Behavioral Symptoms</summary></details></h3><div class="indented"><ul id="3b602d81-a8c1-44c3-ade5-abfdafae6ed1" class="bulleted-list"><li style="list-style-type:disc">Fear of situations in which you may be judged negatively</li></ul><ul id="7278b633-2d94-4f7c-8304-c6030fa15988" class="bulleted-list"><li style="list-style-type:disc">Worry about embarrassing or humiliating yourself</li></ul><ul id="119f0190-7d30-4db5-bf20-0c5d4c43ee8d" class="bulleted-list"><li style="list-style-type:disc">Intense fear of interacting or talking with strangers</li></ul><ul id="dbad7419-3c79-44a3-a8b3-149ebae84b1f" class="bulleted-list"><li style="list-style-type:disc">Fear that others will notice that you look anxious</li></ul><ul id="acf41cd3-f7d5-4baa-8e73-96896a094372" class="bulleted-list"><li style="list-style-type:disc">Fear of physical symptoms that may cause you embarrassment, such as blushing, sweating, trembling or having a shaky voice</li></ul><ul id="77937c0f-7168-4666-b4a1-69eb1ba30428" class="bulleted-list"><li style="list-style-type:disc">Feel their “mind going blank”</li></ul><ul id="5e73532b-99e1-40c5-8d31-372a4c0da686" class="bulleted-list"><li style="list-style-type:disc">Avoidance of doing things or speaking to people out of fear of embarrassment</li></ul><ul id="76b359f8-aead-4b43-ac87-e6a4cfbe0ea1" class="bulleted-list"><li style="list-style-type:disc">Avoidance of situations where you might be the center of attention</li></ul><ul id="21909b7f-cb7f-46f5-9295-65e7f47f18ef" class="bulleted-list"><li style="list-style-type:disc">Anxiety in anticipation of a feared activity or event</li></ul><ul id="d0fd0636-a2ac-4859-9e3e-d76d14b3e9cc" class="bulleted-list"><li style="list-style-type:disc">Intense fear or anxiety during social situations</li></ul><ul id="f8a8182a-e37a-4d86-8ca2-25c9643d0218" class="bulleted-list"><li style="list-style-type:disc">Analysis of your performance and identification of flaws in your interactions after a social situation</li></ul><ul id="6b5c6b6d-b734-4347-a178-a1e31dcd0006" class="bulleted-list"><li style="list-style-type:disc">Expectation of the worst possible consequences from a negative experience during a social situation</li></ul></div><hr id="84fe582c-48e6-4d0a-929b-85d586d81e18"/><h3 id="a201a1e5-4ddc-4195-a817-40aab04f63b0" class="block-color-red"><details open=""><summary>Physical Symptoms</summary></details></h3><div class="indented"><ul id="d468abc6-dfb0-44a2-a4a4-c1f52f9bf468" class="bulleted-list"><li style="list-style-type:disc">Blushing</li></ul><ul id="a83f5706-679f-4f84-bb22-eab6add2e2d8" class="bulleted-list"><li style="list-style-type:disc">Fast heartbeat</li></ul><ul id="1380924d-064e-4539-9053-577aba6ae5ba" class="bulleted-list"><li style="list-style-type:disc">Trembling</li></ul><ul id="75de2721-9804-4402-b975-58a8b0f7ed28" class="bulleted-list"><li style="list-style-type:disc">Sweating</li></ul><ul id="060b00ef-1e4a-4245-9943-649c2a3134bf" class="bulleted-list"><li style="list-style-type:disc">Upset stomach or nausea</li></ul><ul id="6bc3ed7a-21a6-4ce8-a8be-326fe2b614cc" class="bulleted-list"><li style="list-style-type:disc">Trouble catching your breath</li></ul><ul id="3936442d-f665-4467-a081-35c0b83fa61f" class="bulleted-list"><li style="list-style-type:disc">Dizziness or lightheadedness</li></ul><ul id="0dcf8c47-93af-4fc6-8518-e444d2a435f3" class="bulleted-list"><li style="list-style-type:disc">Feeling that your mind has gone blank</li></ul><ul id="46b65337-6829-4c6f-9be2-3f40e0d75375" class="bulleted-list"><li style="list-style-type:disc">Muscle tension</li></ul></div><hr id="f6203614-f6a1-49e1-8561-e07aaa063b5e"/><h3 id="70927a27-f542-4144-81bf-7ff82972e321" class="block-color-red"><details open=""><summary>Avoided social situations</summary></details></h3><div class="indented"><ul id="c29708b2-d7b6-4fa5-9b72-a43a6de6a0dc" class="bulleted-list"><li style="list-style-type:disc">Interacting with unfamiliar people or strangers</li></ul><ul id="5a20d627-fa2c-4d15-8769-3b6e6177a5bd" class="bulleted-list"><li style="list-style-type:disc">Attending parties or social gatherings</li></ul><ul id="eeb33c89-a6af-45f3-ae80-a0acc5487d50" class="bulleted-list"><li style="list-style-type:disc">Going to work or school</li></ul><ul id="c85d21c7-b912-49d8-816c-af079f9f2f48" class="bulleted-list"><li style="list-style-type:disc">Starting conversations</li></ul><ul id="28475f98-ac4a-4985-adc9-ba91b46ed71f" class="bulleted-list"><li style="list-style-type:disc">Making eye contact</li></ul><ul id="072fca7d-93a9-4aeb-aafc-f40b21782ea0" class="bulleted-list"><li style="list-style-type:disc">Entering a room in which people are already seated</li></ul><ul id="96b99ecd-d75c-49c0-a5e1-67b2ee7fa0b7" class="bulleted-list"><li style="list-style-type:disc">Returning items to a store</li></ul><ul id="dfce3905-fe7b-4880-b742-906d4e7aba40" class="bulleted-list"><li style="list-style-type:disc">Eating in front of others</li></ul><ul id="ea216959-4216-40ad-999f-31823f6e91f9" class="bulleted-list"><li style="list-style-type:disc">Using a public restroom</li></ul></div><hr id="988636a8-d36c-4a0d-b844-23249fecd1ae"/><h3 id="2af2b3b2-54c1-4ae1-8a60-3aee52aa7372" class="block-color-red"><details open=""><summary><strong>Risk factors</strong></summary></details></h3><div class="indented"><ul id="582f09b5-4b03-4fcc-b359-d8b379581891" class="toggle"><li><details open=""><summary>Family history </summary><p id="283638b1-24c5-4983-9adc-bb5d75d916de" class="">You&#x27;re more likely to develop social anxiety disorder if your biological parents or siblings have the condition.</p></details></li></ul><ul id="b2f4884b-0d1a-4177-8650-6f304c77646b" class="toggle"><li><details open=""><summary>Negative experiences</summary><p id="98f3e7ba-0011-4c2c-a8ec-fb6d341ff0d3" class="">Children who experience teasing, bullying, rejection, ridicule or humiliation may be more prone to social anxiety disorder. In addition, other negative events in life, such as family conflict, trauma or abuse, may be associated with this disorder.</p></details></li></ul><ul id="7e0f0089-421c-41b6-a99d-a316daea88a2" class="toggle"><li><details open=""><summary>Temperament </summary><p id="b29dd3ed-a718-442d-a1dc-53672a6da49c" class="">Children who are shy, timid, withdrawn or restrained when facing new situations or people may be at greater risk.</p></details></li></ul><ul id="802100d1-4e5b-426b-bdc7-9b46eb89031b" class="toggle"><li><details open=""><summary>New social or work demands</summary><p id="fca8901c-14c2-4541-a42a-4b801b1665d9" class="">Social anxiety disorder symptoms typically start in the teenage years, but meeting new people, giving a speech in public or making an important work presentation may trigger symptoms for the first time.</p></details></li></ul><ul id="4b337cd0-1252-46cb-a29f-161c34c4e508" class="toggle"><li><details open=""><summary>Having an appearance or condition that draws attention</summary><p id="d2d904b7-10a1-42e8-93f7-00954c4b5878" class="">For example, facial disfigurement, stuttering or tremors due to Parkinson&#x27;s disease can increase feelings of self-consciousness and may trigger social anxiety disorder in some people.</p></details></li></ul></div><hr id="e856912a-dae6-47f1-bee3-ce5cd7b868b5"/><h2 id="4a6a578a-b753-4304-8c70-612a50e7c5d1" class="block-color-red"><details open=""><summary>Sources</summary></details></h2><div class="indented"><p id="5d0fb3e7-2526-44d4-a502-d227ea238323" class=""><a href="https://www.britannica.com/science/social-anxiety-disorder">https://www.britannica.com/science/social-anxiety-disorder</a></p><p id="bd6bec1d-b96e-4f58-ac59-23a45db47f65" class=""><a href="https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561">https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561</a></p><p id="2febeee1-6157-48d3-8bb8-3c68ac4398ed" class=""><a href="https://www.nimh.nih.gov/health/statistics/social-anxiety-disorder">https://www.nimh.nih.gov/health/statistics/social-anxiety-disorder</a></p><p id="3f3e0f3a-9062-40c3-a5db-3c31bb99d854" class=""><a href="https://adaa.org/sites/default/files/SocialAnxietyDisorder-brochure.pdf">https://adaa.org/sites/default/files/SocialAnxietyDisorder-brochure.pdf</a></p><p id="2a208b60-b3e3-4220-a2a7-c1d745efe53a" class=""><a href="https://www.nimh.nih.gov/sites/default/files/documents/health/publications/social-anxiety-disorder-more-than-just-shyness/19-mh-8083-socialanxietydisordermorethanjustshyness_0.pdf">https://www.nimh.nih.gov/sites/default/files/documents/health/publications/social-anxiety-disorder-more-than-just-shyness/19-mh-8083-socialanxietydisordermorethanjustshyness_0.pdf</a></p><p id="a23435fb-216f-472a-b449-cf2d2570c808" class=""><a href="https://www.sciencedirect.com/science/article/abs/pii/S0140673608604882">https://www.sciencedirect.com/science/article/abs/pii/S0140673608604882</a></p><p id="d0daa3fa-ab5b-4b61-833b-d631e78bbf0b" class="">
+</p><p id="74e240a1-8199-45ab-a3ee-d065aae40749" class="">
+</p><p id="de6cbd82-e2eb-47aa-9e7e-70010796e26a" class="">
+</p></div></div><h2 id="7197d020-6afc-4b57-9226-a890d44823ad" class=""><details open=""><summary>Separation anxiety disorder (SepAD)</summary></details></h2><div class="indented"><h3 id="4441a0ff-df75-458a-9a2b-51332c9b16ea" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><ul id="74d29e84-f981-44d7-86dd-f35b9e533c9a" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-gray">Young children often experience a period of separation anxiety, but most children outgrow separation anxiety by about 3 years of age.</mark></strong></li></ul><ul id="583bf57f-d100-4032-8274-b72a6dddb764" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-gray">Less often, separation anxiety disorder can also occur in teenagers and adults, causing significant problems leaving home or going to work.</mark></strong></li></ul><ul id="e6e4a34a-6d52-4ef9-a36c-98135f8ebaa9" class="bulleted-list"><li style="list-style-type:disc"><strong><mark class="highlight-gray">Three to four percent of children have Seperation Anxiety Disorder.</mark></strong></li></ul><ul id="214534f8-1827-4075-bb73-00a64b6e4ed1" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><strong>Around one-third of children with Seperation Anxiety Disorder will be diagnosed with mental illness as an adult.</strong></mark></li></ul><ul id="4422196e-e76f-47c1-8fc1-58c1388bc430" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray"><strong>Don&#x27;t be too hard on yourself – separation anxiety is common and it&#x27;s normal.</strong></mark></li></ul><ul id="55aba9bb-bbbc-4567-bb09-a408c8cdb1b2" class="toggle"><li><details open=""><summary><mark class="highlight-red"><strong>Disorders that can accompany separation anxiety disorder include:</strong></mark></summary><ul id="52d4a337-64ea-4e08-9d8e-c70d170c36a6" class="bulleted-list"><li style="list-style-type:disc">Other anxiety disorders, such as generalized anxiety disorder, panic attacks, phobias, social anxiety disorder or agoraphobia</li></ul><ul id="adbda905-03d0-4e79-a647-623c8dcd7562" class="bulleted-list"><li style="list-style-type:disc">Obsessive-compulsive disorder</li></ul><ul id="bdeb1ca4-1037-4cf8-a22c-42e20ce8d2f1" class="bulleted-list"><li style="list-style-type:disc">Depression</li></ul></details></li></ul></div><hr id="58739e9f-4910-4444-b816-f3b6aa69d243"/><h3 id="0ca22326-98ce-4282-9f13-87e8e1838445" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><ul id="b2bc069a-6289-4aa9-9080-fd439bf87a3c" class="bulleted-list"><li style="list-style-type:disc">Sometimes, separation anxiety disorder can be triggered by life stress that results in separation from a loved one. Genetics may also play a role in developing the disorder.</li></ul><ul id="ae106df4-884e-4269-a108-57a783761769" class="toggle"><li><details open=""><summary>It can also occur after a stressful life event such as:</summary><ul id="92616134-d693-4dca-a00e-537b42a01a6b" class="bulleted-list"><li style="list-style-type:disc">Moving to a new home</li></ul><ul id="ec22d317-6fad-4803-8f27-a6b2167199c6" class="bulleted-list"><li style="list-style-type:disc">Switching schools</li></ul><ul id="78d3163c-3c55-4a7d-bf16-7de36a822899" class="bulleted-list"><li style="list-style-type:disc">Divorce</li></ul><ul id="7fbfa672-0f67-4e9b-98e7-9d69e2ea65b8" class="bulleted-list"><li style="list-style-type:disc">The death of a close family member</li></ul></details></li></ul><p id="7a03dad1-2c93-44df-882c-c5fab6626bae" class="">
+</p></div><hr id="6bde2227-a652-4690-a071-3b806962b263"/><h3 id="3a474239-d4f5-4474-8cf7-f5d3b5754dad" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><ul id="b116bdd6-e1da-4c94-afaf-71f31888111e" class="bulleted-list"><li style="list-style-type:disc">Recurrent and excessive distress about anticipating or being away from home or loved ones</li></ul><ul id="0ab8f706-8510-428c-8b6f-58966e74377c" class="bulleted-list"><li style="list-style-type:disc">Constant, excessive worry about losing a parent or other loved one to an illness or a disaster</li></ul><ul id="877a8cde-c6bc-472c-8cf5-b0ccd736e0f2" class="bulleted-list"><li style="list-style-type:disc">Constant worry that something bad will happen, such as being lost or kidnapped, causing separation from parents or other loved ones</li></ul><ul id="731bb63f-9140-458a-897d-2dab1e31525b" class="bulleted-list"><li style="list-style-type:disc">Refusing to be away from home because of fear of separation</li></ul><ul id="4e24a42e-7bd5-4939-9297-497be8132fce" class="bulleted-list"><li style="list-style-type:disc">Not wanting to be home alone and without a parent or other loved one in the house</li></ul><ul id="3ce20d95-2b41-4a78-99b1-ee7e212d7f67" class="bulleted-list"><li style="list-style-type:disc">Reluctance or refusing to sleep away from home without a parent or other loved one nearby</li></ul><ul id="912cd031-657c-402f-a83d-f6a4087c667b" class="bulleted-list"><li style="list-style-type:disc">Repeated nightmares about separation</li></ul><ul id="86482a3f-fca6-492a-9dfd-54ebba74a59e" class="bulleted-list"><li style="list-style-type:disc">Frequent complaints of headaches, stomachaches or other symptoms when separation from a parent or other loved one is anticipated</li></ul><ul id="2aa3c2a7-62e9-4c71-be77-d2ce2bbec355" class="bulleted-list"><li style="list-style-type:disc">Poor school performance</li></ul><ul id="7e474729-3562-4963-bf2c-c359bbeee87e" class="bulleted-list"><li style="list-style-type:disc">Refusing to sleep alone</li></ul></div><hr id="ea0d7995-71bf-47ff-876f-3b57531fc5aa"/><h3 id="a371d6b7-d332-4fc5-8a3a-edcacac0c163" class="block-color-red"><details open=""><summary>Risk factors </summary></details></h3><div class="indented"><ul id="e0ba10fa-04b7-4511-9938-bcf935bc69d1" class="bulleted-list"><li style="list-style-type:disc">A family history of anxiety or depression</li></ul><ul id="6dc29649-f161-4cfe-9623-67d90fe56ca3" class="bulleted-list"><li style="list-style-type:disc">Overprotective parents</li></ul><ul id="03c65af3-edce-4a04-9ef3-242693d4a6af" class="bulleted-list"><li style="list-style-type:disc">A lack of appropriate parental interaction</li></ul></div><hr id="13062baf-3a99-4ecb-a55f-9b8a2eac20c0"/><h3 id="b3564ac9-a62e-4661-bee8-0f764dc0ba12" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="af756201-6559-4e59-aa07-5e7a4cfce066" class=""><a href="https://www.mayoclinic.org/diseases-conditions/separation-anxiety-disorder/symptoms-causes/syc-20377455">https://www.mayoclinic.org/diseases-conditions/separation-anxiety-disorder/symptoms-causes/syc-20377455</a></p><p id="e862ea99-c273-4472-b1e7-1ae1e6becdc1" class=""><a href="https://www.healthline.com/health/anxiety/separation-anxiety">https://www.healthline.com/health/anxiety/separation-anxiety</a></p><p id="174cf29f-0feb-477a-91d4-ae7784d2c837" class=""><a href="https://www.nhs.uk/conditions/baby/babys-development/behaviour/separation-anxiety/">https://www.nhs.uk/conditions/baby/babys-development/behaviour/separation-anxiety/</a></p></div><p id="bdbc228a-9ed1-40d8-854d-b655caad2ec5" class="">
+</p></div><h2 id="d3af618c-5c7e-4fee-8f8d-d0039316aace" class=""><details open=""><summary>Selective mutism</summary></details></h2><div class="indented"><h3 id="82a7b162-9c14-4f9e-a616-85ba0d173aa3" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><ul id="661e2689-a1d0-4f2c-9009-d9026207a125" class="bulleted-list"><li style="list-style-type:disc"><strong>Selective mutism is a severe anxiety disorder where a person is unable to speak in certain social situations, such as with classmates at school or to relatives they do not see very often.</strong></li></ul><ul id="64b8bb73-faaf-46d9-ba74-e0cb70c3507b" class="bulleted-list"><li style="list-style-type:disc">Children with Selective mutism are often wary of doing anything that draws attention to them because they think that by doing so, people will expect them to talk.</li></ul><ul id="f1cb886d-a576-42bf-8e3e-21816afdd9c5" class="bulleted-list"><li style="list-style-type:disc">It usually starts during childhood between age 2 and 4 and, if left untreated, can persist into adulthood.</li></ul><ul id="c780e13c-3703-4a8a-9d54-f659b9ca2cba" class="bulleted-list"><li style="list-style-type:disc">More than 90% of children with Selective Mutism also have social phobia or social anxiety.</li></ul><ul id="cb6cca21-10d3-481b-9610-f2c46ca1c9f3" class="bulleted-list"><li style="list-style-type:disc">Selective mutism affects about 1 in 140 young children.</li></ul><ul id="aaff4ae9-a2de-4eb8-bbbc-3fce002ab9b7" class="bulleted-list"><li style="list-style-type:disc">It&#x27;s more common in girls and children who are learning a second language, such as those who&#x27;ve recently migrated from their country of birth.</li></ul><ul id="a2ca7c79-38dd-4f39-ac2b-cfd7e825e050" class="bulleted-list"><li style="list-style-type:disc">It&#x27;s important for selective mutism to be recognised early by families and schools so they can work together to reduce a child&#x27;s anxiety.</li></ul></div><hr id="bf384b0e-1c22-4771-8cd4-ea5a27f7f5ad"/><h3 id="e4494519-408f-447b-ad3e-6dc69a23c5d4" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><p id="f1a1b836-9d15-495d-88df-56698234ccbb" class="">Experts regard selective mutism as a fear (phobia) of talking to certain people. The cause is not always clear, but it&#x27;s known to be associated with anxiety.</p><p id="0c27f1ce-6ff1-419d-800a-ceb6b1a6b812" class="">
+</p><p id="aeb726ba-284c-41e0-94c6-4e2ba9bfe6b5" class="">Many children become too distressed to speak when separated from their parents and transfer this anxiety to the adults who try to settle them.</p><p id="a6c99325-b835-4420-a3c6-9af6a163c65c" class="">
+</p><p id="91917f91-6053-45a1-8b5d-3da696ade18b" class="">If they have a speech and language disorder or hearing problem, it can make speaking even more stressful.</p><p id="914de2c0-8f99-47f3-b546-506c8eb9ea43" class="">
+</p><p id="00f592e8-607c-4e62-9c0f-7c403daa2c3f" class="">The majority of children with Selective Mutism have a genetic predisposition to anxiety. In other words, they have inherited a tendency to be anxious from one or more family members.</p></div><hr id="b7ac5485-3e1b-40a2-8969-af42f5182554"/><h3 id="354992dc-587a-4c94-869d-488fbf3e3625" class="block-color-red"><details open=""><summary>Symptoms</summary></details></h3><div class="indented"><ul id="68050f7c-9804-4b1d-b56d-30e1bf4d85ca" class="bulleted-list"><li style="list-style-type:disc">Fear of speaking</li></ul><ul id="313a9e38-69c3-4679-a7ff-65214f59e507" class="bulleted-list"><li style="list-style-type:disc">Nervous, uneasy or socially awkward</li></ul><ul id="0feed9fc-7d67-4b0b-855b-953594ef5ed7" class="bulleted-list"><li style="list-style-type:disc">Struggle to make eye contact when uncomfortable</li></ul><ul id="c1e5733f-1fd9-420e-8626-66bf1d16152b" class="bulleted-list"><li style="list-style-type:disc">Present as behaviorally inhibited</li></ul><ul id="6e5d15a4-f4c4-4fc5-9321-23779dcee4d8" class="bulleted-list"><li style="list-style-type:disc">Difficulty talking with peers in school</li></ul><ul id="44ce24b7-bb0c-4c0b-99a1-36f39bcfd6ef" class="bulleted-list"><li style="list-style-type:disc">Sensitivity to noise and crowds</li></ul><ul id="e2c4f40c-83b7-46d6-a975-04bac99a7965" class="bulleted-list"><li style="list-style-type:disc">Rely on pointing, nodding, writing, and other forms of nonverbal communication to answer questions</li></ul><ul id="10c52726-b770-4011-a3ea-d97c86a9f6f5" class="bulleted-list"><li style="list-style-type:disc">Speak through a trusted individual—e.g., whispering an answer to a question to a parent or friend at school</li></ul></div><hr id="cd3a01f3-ecd1-44eb-9597-9e5b2606c3e6"/><h3 id="c22d6b40-eef3-49be-a1a2-a43f0f3fe275" class="block-color-red"><details open=""><summary>Observed positive traits in most cases</summary></details></h3><div class="indented"><ul id="66ea9825-51c1-40d3-8c72-71c5570e7205" class="bulleted-list"><li style="list-style-type:disc">Above average intelligence, inquisitiveness, or perception</li></ul><ul id="05519568-8346-4c5d-8ff9-ed940cd1ebf8" class="bulleted-list"><li style="list-style-type:disc">A strong sense of right and wrong</li></ul><ul id="141fb1ce-ac60-48d1-9b17-1452499fadb5" class="bulleted-list"><li style="list-style-type:disc">Creativity</li></ul><ul id="9f4829ba-795d-4390-ba70-c6f38651f312" class="bulleted-list"><li style="list-style-type:disc">Love for the arts</li></ul><ul id="2afb4431-792d-4dd8-b41b-c54c1b43ab0b" class="bulleted-list"><li style="list-style-type:disc">Empathy</li></ul><ul id="a7feed56-f512-449b-a1fe-1fefbbb1f360" class="bulleted-list"><li style="list-style-type:disc">Sensitivity for other people</li></ul></div><h3 id="a16a61e0-8cd1-4e5a-ae41-c266c8b1bd81" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="f80077a2-467b-4e7e-985e-852f8f1d7135" class=""><a href="https://www.nhs.uk/mental-health/conditions/selective-mutism/">https://www.nhs.uk/mental-health/conditions/selective-mutism/</a></p><p id="c4a85d47-cd7a-4b97-b6d8-59148764a2a6" class=""><a href="https://www.selectivemutism.org/">https://www.selectivemutism.org/</a></p><p id="8dfa90a1-956d-403a-aed3-f5ea7e6e7591" class=""><a href="https://childmind.org/guide/parents-guide-how-to-help-a-child-with-selective-mutism/#block_e29b36e4-5fbf-48f1-b9d9-e84472144627">https://childmind.org/guide/parents-guide-how-to-help-a-child-with-selective-mutism/#block_e29b36e4-5fbf-48f1-b9d9-e84472144627</a></p><p id="7e691b9c-a7aa-4721-bcc3-7b32a1d0a87d" class=""><a href="https://en.wikipedia.org/wiki/Selective_mutism">https://en.wikipedia.org/wiki/Selective_mutism</a></p><p id="9b729f4c-e86a-4049-8d1a-3aa6ecbc5c70" class="">
+</p></div></div><h2 id="46bcce9c-80db-4e57-a5a8-c7fc51a748f1" class=""><details open=""><summary>Agoraphobia</summary></details></h2><div class="indented"><h3 id="e4611f64-4235-499f-9120-9285e35232b5" class="block-color-red"><details open=""><summary>Information</summary></details></h3><div class="indented"><ul id="ff50d02c-e7ed-4937-ab14-328dc71d0060" class="bulleted-list"><li style="list-style-type:disc">It is a type of anxiety disorder characterized by avoidance of situations that induce intense fear and panic.</li></ul><ul id="c9d8a7e8-901e-44c9-8b62-aafc14118fa0" class="toggle"><li><details open=""><summary>Someone with agoraphobia may be scared of:</summary><ul id="c49dc17b-a8ca-42eb-b2cd-1ae2ac3ec6ce" class="bulleted-list"><li style="list-style-type:disc"> travelling on public transport</li></ul><ul id="53ad43e8-258c-4330-ba57-b6ac205b4957" class="bulleted-list"><li style="list-style-type:disc">visiting a shopping centre</li></ul><ul id="bf7c2f39-0baf-4ca1-bd59-f1c0c769e9da" class="bulleted-list"><li style="list-style-type:disc">leaving home</li></ul></details></li></ul><ul id="3ab4f255-c7f6-43cd-ba28-98293ae772d1" class="bulleted-list"><li style="list-style-type:disc">Prevalence of agoraphobia among adults was similar for females (0.9%) and males (0.8%). [2001 - 2003]</li></ul><ul id="b69570d5-86e0-4e89-bf65-a2de3bbad4c7" class="bulleted-list"><li style="list-style-type:disc">An estimated 1.3% of U.S. adults experience agoraphobia at some time in their lives.</li></ul><figure id="3b175412-11cf-4dec-853f-0407fb90e046" class="image"><a href="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-prevalence-of%201.png"><img style="width:1200px" src="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-prevalence-of%201.png"/></a></figure><figure id="0cb82931-8d35-46f6-8bae-a7cb91b86932" class="image"><a href="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-severity-of-ag.png"><img style="width:1200px" src="Anxiety%20disorders%2062fb2427352f48ee97cfaf4838db5294/past-year-severity-of-ag.png"/></a></figure><p id="62938369-f4e2-4827-80b7-a6b729d96e2e" class="">
+</p></div><hr id="59041e52-0cdf-4ab8-995d-8e4a4ebde8ed"/><h3 id="4c713eea-fbc3-464b-b3c8-2fea2b5e8ccd" class="block-color-red"><details open=""><summary>Causes</summary></details></h3><div class="indented"><p id="4c2058f3-16e8-4b87-a1a1-ae55771cf49a" class="">Biology — including health conditions and genetics — temperament, environmental stress and learning experiences may all play a role in the development of agoraphobia.</p></div><hr id="cc79e1c6-2f3b-472a-9d74-4db60bed4290"/><h3 id="f514c70a-60ff-4777-aeec-774efb0e3b1c" class="block-color-red"><details open=""><summary>Physical Symptoms</summary></details></h3><div class="indented"><p id="c3aebbad-ff8f-468e-9fb0-777d60a5b3f0" class="">The physical symptoms of agoraphobia can be similar to those of a panic attack
+ and may include</p><p id="37cf32fc-510a-4016-9059-38e2021589ee" class="">
+</p><ul id="74f60c21-0c8f-4fda-ab37-85cf4fcfff65" class="bulleted-list"><li style="list-style-type:disc">rapid heartbeat</li></ul><ul id="a2c14780-1236-44cc-a6d2-cd6baf3c9dfd" class="bulleted-list"><li style="list-style-type:disc">rapid breathing (hyperventilating)</li></ul><ul id="5c0e34c8-5a8c-48cf-9517-b371fa1083b5" class="bulleted-list"><li style="list-style-type:disc">feeling hot and sweaty</li></ul><ul id="28bd3c55-b698-4649-886c-cee057d0cc66" class="bulleted-list"><li style="list-style-type:disc">feeling sick</li></ul><ul id="b964366f-15b6-45ff-a698-53dbd525acd2" class="bulleted-list"><li style="list-style-type:disc">chest pain</li></ul><ul id="bb9ab58c-b17c-4e4b-9546-cc4f39710611" class="bulleted-list"><li style="list-style-type:disc">difficulty swallowing (dysphagia)</li></ul><ul id="088bcf70-f870-4276-9fb2-f055f0c4539e" class="bulleted-list"><li style="list-style-type:disc">trembling</li></ul><ul id="605dc92b-2e87-4e34-983d-30fc40a00ad8" class="bulleted-list"><li style="list-style-type:disc">dizziness</li></ul><ul id="3832ea61-edcb-4058-8013-c23c599c119d" class="bulleted-list"><li style="list-style-type:disc">ringing in the ears (tinnitus)</li></ul><ul id="06025feb-424a-4667-8012-87236bafeaba" class="bulleted-list"><li style="list-style-type:disc">feeling faint</li></ul></div><hr id="fb39678e-d156-4343-a898-c80d2124ef80"/><h3 id="ee9456f2-496b-4bc3-95b1-fba3fea432a5" class="block-color-red"><details open=""><summary>Behavioural Sympotms</summary></details></h3><div class="indented"><p id="8c353d3e-112d-40d6-977e-3f00a3faaf2d" class="">• Avoiding situations that could lead to panic attacks, such as crowded places, public transport and queues</p><p id="65b0e4f8-364f-4082-9fe5-987c920f81ac" class="">• Being housebound – not being able to leave the house for long periods of time</p><p id="e9ae54a9-7566-49a3-b4a6-bd2f7d6c00a3" class="">• Needing to be with someone you trust when going anywhere</p><p id="8f99bac4-1dde-487f-9784-2a7f83fbe0b7" class="">• Avoiding being far away from home<div class="indented"><p id="cffcdaf9-500d-432d-afa1-c005416518b6" class="">• Fear of leaving home alone.</p></div></p><p id="cc8cc4c7-9bb8-4e9e-8a79-e6d2954e6d68" class="">• Fear of crowds or waiting in line</p><p id="dcc57237-6250-404c-8dd4-9423774d2211" class="">• Fear of enclosed spaces, such as movie theaters, elevators or small stores</p><p id="05384762-1012-43e5-9b40-f3f8177031dc" class="">• Fear of open spaces, such as parking lots, bridges or malls</p><p id="ace9fccf-7cb0-4f52-8a9a-b9406f92bd6d" class="">• Fear of using public transportation, such as a bus, plane or train</p><p id="e3d426dd-b8b4-42e3-a986-b72798fa2adc" class="">
+</p></div><hr id="33f23224-5a07-4e7a-bdd7-5f1a1e53a3a5"/><h3 id="009b45be-9d81-4fdd-ba2c-c11e9646e078" class="block-color-red"><details open=""><summary>Risk factors </summary></details></h3><div class="indented"><p id="452fa3df-7067-4d05-af84-672f5d72f356" class="">• Having panic disorder or other phobias</p><p id="b0eedb74-d470-43df-8317-f0063dbf1085" class="">• Responding to panic attacks with excessive fear and avoidance</p><p id="83b8b5ed-c613-467b-b217-f4aef8f632f2" class="">• Experiencing stressful life events, such as abuse, the death of a parent or being attacked</p><p id="a4f465a0-3e5e-4a51-8d2a-cd35a39f5195" class="">• Having an anxious or nervous temperament</p><p id="19354dcf-67a8-430a-b529-60bb309addc9" class="">• Having a blood relative with agoraphobia</p></div><hr id="f0df8c6d-4bef-4a5a-b321-80030348a571"/><h3 id="9e980fec-fb99-4dad-b1b0-738c0d693a4c" class="block-color-red"><details open=""><summary>Sources</summary></details></h3><div class="indented"><p id="2e1810b0-d848-4d76-8b5e-58e1e936ecc6" class=""><a href="https://www.nimh.nih.gov/health/statistics/agoraphobia">https://www.nimh.nih.gov/health/statistics/agoraphobia</a></p><p id="bfc7cfdb-37f1-4581-88b5-934d2e8e4fa3" class=""><a href="https://www.mayoclinic.org/diseases-conditions/agoraphobia/symptoms-causes/syc-20355987">https://www.mayoclinic.org/diseases-conditions/agoraphobia/symptoms-causes/syc-20355987</a></p><p id="898a37f3-51c9-466e-8933-7cd708938d8b" class=""><a href="https://www.nhs.uk/mental-health/conditions/agoraphobia/symptoms/">https://www.nhs.uk/mental-health/conditions/agoraphobia/symptoms/</a></p></div></div></div></article></body></html>
