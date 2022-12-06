@@ -20,6 +20,8 @@ dependencies:
   flutter:
     sdk: flutter
   hexcolor: ^2.0.7
+  flutter_svg: ^1.0.3
+  intl: ^0.17.0
   
 
 dev_dependencies:
@@ -47,6 +49,15 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - Assets/Logo.png
+    - Assets/MainFeatures_Screen/mental_health.png
+    - Assets/MainFeatures_Screen/Mood_tracker.png
+    - Assets/MainFeatures_Screen/Autoimmune_Disorder.png
+    - Assets/MainFeatures_Screen/Cigarette_Resistance.png
+    - Assets/MainFeatures_Screen/Distance_Management.png
+    - Assets/MainFeatures_Screen/Assault.png
+
+
+
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
