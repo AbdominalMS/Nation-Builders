@@ -1,0 +1,4 @@
+#Tue Dec 13 15:35:13 EET 2022
+base.0=F\:\\Nation Builders\\Nation-Builders\\Equihealth\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

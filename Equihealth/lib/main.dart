@@ -1,86 +1,73 @@
+// @dart=2.9
+import 'dart:async';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:equihealth/Components.dart';
 import 'package:equihealth/login.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/services.dart';
+import 'package:lottie/lottie.dart';
+import 'MyApp.dart';
 
 void main() async {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
       overlays: [SystemUiOverlay.bottom]);
-  runApp(MyApp());
+  runApp(Start());
+}
+class Start extends StatefulWidget{
+  @override
+  State<Start> createState() => _StartState();
 }
 
-class MyApp extends StatelessWidget {
+class _StartState extends State<Start>{
+
   @override
-  Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
+  Widget build(BuildContext context){
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Equihealth',
-      home: Builder(
-          builder: (context) => Scaffold(
-              backgroundColor: Colors.white,
-              body: Center(
-                child: Container(
-                  width: 600,
-                  height: 900,
-                  alignment: Alignment.center,
-                  child: Column(children: [
-                    const SizedBox(width: 50, height: 50),
-                    Expanded(
-                      child: Image.asset('Assets/Logo.png',
-                          width: 200, height: 600),
-                    ),
-                    const SizedBox(width: 75, height: 75),
-                    Text(
-                      'Choose language              اختر اللغة',
-                      style: TextStyle(
-                          color: HexColor("004aad"),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.1),
-                    ),
-                    const SizedBox(width: 200, height: 50),
-                    Column(
-                      children: [
-                        Container(
-                            width: 317,
-                            height: 52,
-                            color: HexColor("004aad"),
-                            child: Center(
-                                child: ElevatedButton(
-                              child: const Text('English'),
-                              onPressed: () {
-                                NavigateAndFinish(context, Login());
-                              },
-                              style: ElevatedButton.styleFrom(
-                                  minimumSize: const Size(317, 52),
-                                  primary: HexColor("004aad")),
-                            ))),
-                        const SizedBox(width: 200, height: 20),
-                        Container(
-                            width: 317,
-                            height: 52,
-                            color: HexColor("004aad"),
-                            child: Center(
-                                child: ElevatedButton(
-                              child: const Text('Arabic'),
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                  minimumSize: const Size(317, 52),
-                                  primary: HexColor("004aad")),
-                            ))),
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 150,
-                      height: 150,
-                    ),
-                  ]),
-                ),
-              ))),
+      home: SplashScreen(),
     );
+  }
+}
+class SplashScreen extends StatefulWidget {
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+  //controller
+  AnimationController _controller;
+
+
+  @override
+  void initState() {
+  super.initState();
+
+  _controller = AnimationController(
+  duration: Duration(seconds: 5),
+  vsync: this,
+  );
+  _controller.forward();
+  }
+
+  @override
+  void dispose() {
+  super.dispose();
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+      return AnimatedSplashScreen(
+          splash: Center(child:
+          Lottie.asset('Assets/Animations/intro.json',
+          controller: _controller
+          ),),
+          nextScreen: MyApp(),
+          duration: 5000,
+          splashTransition: SplashTransition.fadeTransition,
+        splashIconSize: 250,
+      );
   }
 }

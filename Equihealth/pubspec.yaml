@@ -22,11 +22,17 @@ dependencies:
   hexcolor: ^2.0.7
   flutter_svg: ^1.0.3
   intl: ^0.17.0
-  
+  flip_card: ^0.4.4
+  lottie: ^2.0.0
+  animated_splash_screen: ^1.3.0
+  flutter_native_splash: ^2.2.16
+  video_player: ^2.2.19
+  fancy_drawer: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -55,6 +61,14 @@ flutter:
     - Assets/MainFeatures_Screen/Cigarette_Resistance.png
     - Assets/MainFeatures_Screen/Distance_Management.png
     - Assets/MainFeatures_Screen/Assault.png
+    - Assets/Specialists/Abdelrahman.png
+    - Assets/Specialists/Shahd.png
+    - Assets/Specialists/Maryam.png
+    - Assets/Specialists/Hana.png
+    - Assets/Distance/Distance-Walked.png
+    - Assets/Distance/Empty-Bottle.png
+    - Assets/Distance/Full-Bottle.png
+    - Assets/Animations/intro.json
 
 
 
