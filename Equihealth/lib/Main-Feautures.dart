@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'loading.dart';
+
 class MainFeatures extends StatefulWidget {
   @override
   State<MainFeatures> createState() => _MainFeaturesState();
@@ -32,7 +34,7 @@ class _MainFeaturesState extends State<MainFeatures> {
           left: true,
           right: true,
           child: Scaffold(
-
+            drawerEdgeDragWidth: MediaQuery.of(context).size.width,
             appBar: AppBar(
               iconTheme: IconThemeData(color: primaryColor),
               backgroundColor: HexColor('ffffff'),
@@ -364,7 +366,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                 ),
               ),
             ),
-            drawer: myDrawer(),
+            drawer: myDrawer(context),
           ),
         ),
       ),

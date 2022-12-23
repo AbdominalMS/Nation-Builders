@@ -27,7 +27,7 @@ class _Autoimmune_DisorderState extends State<Autoimmune_Disorder> {
       home: Builder(
         builder: (context) => Scaffold(
           drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-          drawer: myDrawer(),
+          drawer: myDrawer(context),
           appBar: appBar(title: 'Autoimmune Disorder'),
           body: SafeArea(
             bottom: true,

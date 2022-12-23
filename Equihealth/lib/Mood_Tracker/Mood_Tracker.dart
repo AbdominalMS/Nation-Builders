@@ -20,7 +20,7 @@ class Mood_Tracker extends StatelessWidget {
           left: true,
           child: Scaffold(
               drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-            drawer: myDrawer(),
+            drawer: myDrawer(context),
             appBar: appBar(title: 'Mood Tracker'),
             body: Container(
               margin: EdgeInsets.only(top: height * 0.07),

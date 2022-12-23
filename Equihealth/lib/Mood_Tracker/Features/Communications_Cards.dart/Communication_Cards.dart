@@ -27,7 +27,7 @@ class _Communication_CardState extends State<Communication_Card> {
         left: true,
         child: Scaffold(
           drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-          drawer: myDrawer(),
+          drawer: myDrawer(context),
           appBar: appBar(title: 'Communication Card'),
           body: SingleChildScrollView(
             child: Column(

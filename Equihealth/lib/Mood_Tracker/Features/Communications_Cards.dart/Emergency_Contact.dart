@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:equihealth/Components.dart';
 
@@ -17,7 +18,7 @@ class Emergency_contact extends StatelessWidget {
           left: true,
           child: Scaffold(
             drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-            drawer: myDrawer(),
+            drawer: myDrawer(context),
             appBar: appBar(title: 'Emergeny Contact'),
           ),
         ),

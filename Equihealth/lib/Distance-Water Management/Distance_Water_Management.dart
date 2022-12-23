@@ -31,8 +31,7 @@ List<String> bottle = [
       debugShowCheckedModeBanner: false,
       home: Builder(
         builder: (context) => Scaffold(
-          drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-          drawer: myDrawer(),
+          drawer: myDrawer(context),
           appBar: appBar(title: 'Distance-water-management'),
           body: SingleChildScrollView(
             child: Padding(

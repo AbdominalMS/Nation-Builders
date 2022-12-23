@@ -1,4 +1,10 @@
+import 'package:equihealth/Autoimmune%20disorder/Autoimmune_Disorder.dart';
+import 'package:equihealth/Cigarette_Resistance/Cigarette_Resistance.dart';
+import 'package:equihealth/Distance-Water%20Management/Distance_Water_Management.dart';
+import 'package:equihealth/Mental_Health/Mental_Health.dart';
 import 'package:equihealth/Mood_Tracker/Features/Daily_Track.dart';
+import 'package:equihealth/Mood_Tracker/Mood_Tracker.dart';
+import 'package:equihealth/Sexual%20Abuse/Sexual_Abuse.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -131,43 +137,222 @@ Widget SmallButtonContainer({
   ),
 );
 
-Widget myDrawer(){
+Widget myDrawer(context){
   return Drawer(
     child: SingleChildScrollView(
         child:Container(
-            margin:EdgeInsets.only(top:50),
-            child:Column(children: <Widget>[
+          color: Colors.white,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+              child: Column(children: <Widget>[
+                Padding(padding: EdgeInsets.all(10.0),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Equihealth", style: TextStyle(fontSize: 20, color: primaryColor, fontWeight: FontWeight.bold),),
+                    Container(
+                      width: 75,
+                        height: 75,
+                        child: Image.asset('Assets/Logo.png'))
+                  ],
+                ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: secondaryColor,
+                      borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: secondaryColor,
+                          radius: 20,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100),
+                            child: Icon(Icons.home, color: Colors.white,),
+                          ),
+                        ),
+                        title:Text("Home"),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MainFeatures()));
+                        }
+                    ),
+                  ),
+                ),
 
-              ListTile(
-                  leading:Icon(Icons.home),
-                  title:Text("Home"),
-                  onTap:(){
-                    // Home button action
-                  }
-              ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: secondaryColor,
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: secondaryColor,
+                          radius: 20,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100),
+                            child: Image.asset('Assets/MainFeatures_Screen/mental_health.png'),
+                          ),
+                        ),
+                        title:Text("Mental Health"),
+                        onTap:(){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Mental_Health()));
+                        }
+                    ),
+                  ),
+                ),
 
-              ListTile(
-                  leading:Icon(Icons.person),
-                  title:Text("My Profile"),
-                  onTap:(){
-                    // My Pfofile button action
-                  }
-              ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: secondaryColor,
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: secondaryColor,
+                      radius: 20,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: Image.asset('Assets/MainFeatures_Screen/Mood_tracker.png'),
+                      ),
+                    ),
+                        title:Text("Mood Tracker"),
+                        onTap:(){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Mood_Tracker()));
+                        }
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: secondaryColor,
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: secondaryColor,
+                        radius: 20,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: Image.asset('Assets/MainFeatures_Screen/Autoimmune_Disorder.png'),
+                        ),
+                      ),
+                        title:Text("Autoimmune Disorder"),
+                        onTap:(){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Autoimmune_Disorder()));
+                        }
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: secondaryColor,
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: secondaryColor,
+                          radius: 20,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100),
+                            child: Image.asset('Assets/MainFeatures_Screen/Cigarette_Resistance.png'),
+                          ),
+                        ),
+                        title:Text("Cigarette Resistance"),
+                        onTap:(){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Cigarette_Resistance()));
+                        }
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: secondaryColor,
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: secondaryColor,
+                          radius: 20,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100),
+                            child: Image.asset('Assets/MainFeatures_Screen/Distance_Management.png'),
+                          ),
+                        ),
+                        title:Text("Distance-Water Management"),
+                        onTap:(){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Distance_Water_Management()));
+                        },
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: secondaryColor,
+                        borderRadius: BorderRadius.all(Radius.circular(20))
+                    ),
+                    child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: secondaryColor,
+                          radius: 20,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100),
+                            child: Image.asset('Assets/MainFeatures_Screen/Assault.png'),
+                          ),
+                        ),
+                        title:Text("Sexual Abuse"),
+                        onTap:(){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Sexual_Abuse()));
+                        }
+                    ),
+                  ),
+                ),
 
-              ListTile(
-                  leading:Icon(Icons.search),
-                  title:Text("Find Peoples"),
-                  onTap:(){
-                    // Find peoples button action
-                  }
-              )
 
-              //add more drawer menu here
 
-            ],)
+                //add more drawer menu here
+
+              ],),
+            )
         )
     ),
   );
 }
+
+
 
 

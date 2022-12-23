@@ -50,6 +50,8 @@ class _Memory_GameState extends State<Memory_Game> {
       home: Builder(
         builder: (context) => Scaffold(
             appBar: appBar(title: 'Memory Game'),
+          drawerEdgeDragWidth: width,
+          drawer: myDrawer(context),
           body: SafeArea(
             top: true,
             bottom: true,

@@ -20,7 +20,7 @@ class Substance_use_disorder extends StatelessWidget {
           left: true,
           child: Scaffold(
               drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-              drawer: myDrawer(),
+              drawer: myDrawer(context),
               appBar: appBar(title: "Substance use diorder"),
               body: Container(
                 margin: EdgeInsets.only(top: height * 0.04, left: width * 0.04),

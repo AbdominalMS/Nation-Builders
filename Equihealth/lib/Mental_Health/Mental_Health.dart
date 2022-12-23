@@ -21,7 +21,7 @@ class Mental_Health extends StatelessWidget {
           right: true,
           child: Scaffold(
             drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-            drawer: myDrawer(),
+            drawer: myDrawer(context),
             appBar: appBar(title: 'Mental Health'),
             body: Container(
                 margin: EdgeInsets.only(top: height * 0.04),

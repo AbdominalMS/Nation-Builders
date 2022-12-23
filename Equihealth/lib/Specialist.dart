@@ -19,7 +19,7 @@ class Contact_Specialist extends StatelessWidget{
       home: Builder(
         builder: (context) => Scaffold(
           drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-          drawer: myDrawer(),
+          drawer: myDrawer(context),
           resizeToAvoidBottomInset: false,
         appBar: appBar(title: '',),
           body: SingleChildScrollView(

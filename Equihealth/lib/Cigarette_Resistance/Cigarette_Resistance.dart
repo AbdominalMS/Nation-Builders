@@ -18,7 +18,7 @@ class Cigarette_Resistance extends StatelessWidget{
       home: Builder(
         builder: (context) => Scaffold(
           drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-          drawer: myDrawer(),
+          drawer: myDrawer(context),
           appBar: appBar(title: 'Cigarette Resistance'),
           body: Center(
             child: Column(

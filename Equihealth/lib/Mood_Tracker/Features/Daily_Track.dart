@@ -46,7 +46,7 @@ class _Daily_TrackState extends State<Daily_Track> {
         left: true,
         child: Scaffold(
           drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-          drawer: myDrawer(),
+          drawer: myDrawer(context),
           appBar: appBar(title: 'Daily Track'),
           body: SingleChildScrollView(
             child: Padding(

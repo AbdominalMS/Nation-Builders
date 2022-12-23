@@ -69,6 +69,7 @@ flutter:
     - Assets/Distance/Empty-Bottle.png
     - Assets/Distance/Full-Bottle.png
     - Assets/Animations/intro.json
+    - Assets/Animations/loading.json
 
 
 
