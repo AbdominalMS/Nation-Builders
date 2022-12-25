@@ -9,8 +9,6 @@ import 'package:equihealth/Specialist.dart';
 import 'package:equihealth/variables.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 import 'loading.dart';
 
 class MainFeatures extends StatefulWidget {

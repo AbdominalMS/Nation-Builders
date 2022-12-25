@@ -25,7 +25,7 @@ class Take_Action extends StatelessWidget{
                 children: [
             Padding(
             padding: EdgeInsets.all(8.0),
-            child: Text('Today I..', style: TextStyle(color: primaryColor, fontSize: 25, fontWeight: FontWeight.bold),),
+            child: Text('I want to take action for...', style: TextStyle(color: primaryColor, fontSize: 25, fontWeight: FontWeight.bold),),
           ),
                   Padding(
                     padding: EdgeInsets.all(4.0),

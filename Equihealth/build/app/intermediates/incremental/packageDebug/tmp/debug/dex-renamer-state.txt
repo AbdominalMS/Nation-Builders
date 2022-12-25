@@ -1,4 +1,4 @@
-#Fri Dec 23 21:30:58 EET 2022
+#Sat Dec 24 20:36:10 EET 2022
 base.0=F\:\\Nation Builders\\Nation-Builders\\Equihealth\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

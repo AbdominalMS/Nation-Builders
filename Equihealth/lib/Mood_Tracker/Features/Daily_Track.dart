@@ -1,7 +1,6 @@
 import 'package:equihealth/variables.dart';
 import 'package:flutter/material.dart';
 import 'package:equihealth/Components.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
 int checkedIndex = 0;
@@ -18,6 +17,13 @@ List<String> Moods = [
   'Annoyed',
   'Scared',
   'Stressed'
+];
+List<Widget> chooseIcon = [
+  Icon(Icons.sentiment_very_satisfied),
+  Icon(Icons.sentiment_satisfied),
+  Icon(Icons.sentiment_neutral),
+  Icon(Icons.sentiment_dissatisfied),
+  Icon(Icons.sentiment_very_dissatisfied),
 ];
 
 class Daily_Track extends StatefulWidget {
@@ -55,48 +61,257 @@ class _Daily_TrackState extends State<Daily_Track> {
                 margin: EdgeInsets.only(top: height * 0.02),
                 width: width,
                 height: height,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(
-                          right: width * 0.04,
-                          left: width * 0.04,
-                          bottom: height * 0.03),
-                      width: width,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(
+                            right: width * 0.04,
+                            left: width * 0.04,
+                            bottom: height * 0.03),
+                        width: width,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              DateFormat('EEEEEEEEE').format(DateTime.now()),
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: secondaryColor,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              DateFormat('d/MM/yyyy').format(DateTime.now()),
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: secondaryColor,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text(
+                        'My day was',
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: primaryColor,
+                            fontWeight: FontWeight.bold),
+                      ),
+              Container(
+                  margin: EdgeInsets.only(top: height * 0.007),
+                  //width: width,
+                  //height: height * 0.04,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Column(
                         children: [
-                          Text(
-                            DateFormat('EEEEEEEEE').format(DateTime.now()),
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: secondaryColor,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            DateFormat('d/MM/yyyy').format(DateTime.now()),
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: secondaryColor,
-                                fontWeight: FontWeight.bold),
-                          ),
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  iconColor1 = Colors.yellow;
+                                });
+                              },
+                              icon: Icon(Icons.sentiment_satisfied),
+                              iconSize: 50,
+                              color: iconColor1),
+                          Text('Happy',
+                              style: TextStyle(
+                                  color: secondaryColor, fontSize: 15))
                         ],
                       ),
+                      Column(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  iconColor2 = Colors.yellow;
+                                });
+                              },
+                              icon: Icon(Icons.sentiment_satisfied),
+                              iconSize: 50,
+                              color: iconColor2),
+                          Text('Not bad',
+                              style: TextStyle(
+                                  color: secondaryColor, fontSize: 15))
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  iconColor3 = Colors.yellow;
+                                });
+                              },
+                              icon: Icon(Icons.sentiment_neutral),
+                              iconSize: 50,
+                              color: iconColor3),
+                          Text('Medium',
+                              style: TextStyle(
+                                  color: secondaryColor, fontSize: 15))
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  iconColor4 = Colors.yellow;
+                                });
+                              },
+                              icon: Icon(Icons.sentiment_dissatisfied),
+                              iconSize: 50,
+                              color: iconColor4),
+                          Text('Hard',
+                              style: TextStyle(
+                                  color: secondaryColor, fontSize: 15))
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  iconColor5 = Colors.yellow;
+                                });
+                              },
+                              icon: Icon(Icons.sentiment_very_dissatisfied),
+                              iconSize: 50,
+                              color: iconColor5),
+                          Text('Impossible',
+                              style: TextStyle(
+                                  color: secondaryColor, fontSize: 15))
+                        ],
+                      ),
+                    ],
+                  ),
+              ),
+              Container(
+                  margin: EdgeInsets.only(top: height * 0.02, bottom: height * 0.02),
+                  width: width,
+                  child: Text(
+                    'I felt',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: primaryColor,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold),
+                  ),
+              ),
+              Container(
+                  child: Column(
+                    children: [
+                    Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SmallButtonContainer(text: 'Happy', width: width * 0.3, height: height * 0.06, function: () => setState(() {button1 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                      SmallButtonContainer(text: 'Sad', width: width * 0.3, height: height * 0.06, function: () => setState(() {button2 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                      SmallButtonContainer(text: 'Angry', width: width * 0.3, height: height * 0.06, function: () => setState(() {button3 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                    ],
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: height * 0.015),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SmallButtonContainer(text: 'Energetic', width: width * 0.3, height: height * 0.06, function: () => setState(() {button4 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                        SmallButtonContainer(text: 'Depressed', width: width * 0.3, height: height * 0.06, function: () => setState(() {button5 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                        SmallButtonContainer(text: 'Calm', width: width * 0.3, height: height * 0.06, function: () => setState(() {button6 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                      ],
                     ),
-                    Text(
-                      'My day was',
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: height * 0.015),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SmallButtonContainer(text: 'Nervous', width: width * 0.3, height: height * 0.06, function: () => setState(() {button7 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                        SmallButtonContainer(text: 'Excited', width: width * 0.3, height: height * 0.06, function: () => setState(() {button8 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                        SmallButtonContainer(text: 'Tired', width: width * 0.3, height: height * 0.06, function: () => setState(() {button9 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: height * 0.015),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SmallButtonContainer(text: 'Annoyed', width: width * 0.3, height: height * 0.06, function: () => setState(() {button10 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                        SmallButtonContainer(text: 'Scared', width: width * 0.3, height: height * 0.06, function: () => setState(() {button11 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                        SmallButtonContainer(text: 'Stressed', width: width * 0.3, height: height * 0.06, function: () => setState(() {button12 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: height * 0.02, bottom: height * 0.02),
+                    width: width,
+                    child: Text(
+                      'Because of..',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontSize: 25,
                           color: primaryColor,
+                          fontSize: 25,
                           fontWeight: FontWeight.bold),
                     ),
-                  ],
+                  ),
+
+                            Container(
+                              margin: EdgeInsets.only(//top: height * 0.015
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  SmallButtonContainer(text: 'Study', width: width * 0.3, height: height * 0.06, function: () => setState(() {button13 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                  SmallButtonContainer(text: 'Work', width: width * 0.3, height: height * 0.06, function: () => setState(() {button14 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                  SmallButtonContainer(text: 'Family', width: width * 0.3, height: height * 0.06, function: () => setState(() {button15 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: height * 0.015),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  SmallButtonContainer(text: 'Friends', width: width * 0.3, height: height * 0.06, function: () => {debugPrint('Clicked')}, radius: 30.0,  primary: Colors.white),//setState(() {button16 = primaryColor;})},),
+                                  SmallButtonContainer(text: 'Love', width: width * 0.3, height: height * 0.06, function: () => setState(() {button17 = primaryColor;}), radius: 30.0,  primary:Colors.white),
+                                  SmallButtonContainer(text: 'Past', width: width * 0.3, height: height * 0.06, function: () => setState(() {button18 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: height * 0.015),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  SmallButtonContainer(text: 'Future', width: width * 0.3, height: height * 0.06, function: () => setState(() {button19 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                  SmallButtonContainer(text: 'Time', width: width * 0.3, height: height * 0.06, function: () => setState(() {button20 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                  SmallButtonContainer(text: 'Body', width: width * 0.3, height: height * 0.06, function: () => setState(() {button21 = primaryColor;}), radius: 30.0,  primary: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: height * 0.015),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  SmallButtonContainer(text: 'Food', width: width * 0.3, height: height * 0.06, function: () => setState(() {button22 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                                  SmallButtonContainer(text: 'Health', width: width * 0.3, height: height * 0.06, function: () => setState(() {button23 = primaryColor;}), radius: 30.0, primary: Colors.white),
+                                  SmallButtonContainer(text: 'Responsiblities', width: width * 0.3, height: height * 0.06, function: () => setState(() {button24 = primaryColor;}), radius: 30.0,  primary: Colors.white),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+              ),
+              ),
+                  ),
+                ),
                 ),
               ),
-            ),
-          ),
-        ),
-      ),
-    );
+            );
   }
 }
