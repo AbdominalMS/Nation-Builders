@@ -5,9 +5,10 @@ import 'package:equihealth/Mental_Health/Mental_Health.dart';
 import 'package:equihealth/Mood_Tracker/Features/Daily_Track.dart';
 import 'package:equihealth/Mood_Tracker/Mood_Tracker.dart';
 import 'package:equihealth/Sexual%20Abuse/Sexual_Abuse.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:equihealth/variables.dart';
 import 'package:equihealth/Main-Feautures.dart';
 Color button1 = secondaryColor;
@@ -41,7 +42,7 @@ PreferredSizeWidget appBar({
 }) =>
     AppBar(
         iconTheme: IconThemeData(color: primaryColor),
-      backgroundColor: HexColor('ffffff'),
+      backgroundColor: Color(0xFFffffff),
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -338,6 +339,23 @@ Widget myDrawer(context){
                               MaterialPageRoute(
                                   builder: (context) => Sexual_Abuse()));
                         }
+                    ),
+                  ),
+                ),
+                Padding(
+                    padding: EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: TextButton(
+                          onPressed: () {
+                            FirebaseAuth.instance.signOut();
+                          },
+                          child: Text('Log out',
+                              style: TextStyle(
+                                  color: Color(0xFF004aad),
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold))),
                     ),
                   ),
                 ),

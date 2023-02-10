@@ -32,7 +32,7 @@ class _Book_A_MeetingState extends State<Book_A_Meeting> {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              Container(color: secondaryColor, width: width * 0.2, child: Text("Selected Day " + today.toString().split(" ")[0], textAlign: TextAlign.center,)),
+              Container(width: width * 0.5, child: Text("Selected Day " + today.toString().split(" ")[0], textAlign: TextAlign.center,)),
               Container(
                 child: TableCalendar(
                   locale: "en_US",

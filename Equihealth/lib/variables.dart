@@ -1,5 +1,5 @@
-import 'package:hexcolor/hexcolor.dart';
+import 'dart:ui';
 
-var primaryColor = HexColor('004aad');
-var secondaryColor = HexColor('88d0fa');
-var textColor = HexColor('494635');
+var primaryColor = Color(0xFF004aad);
+var secondaryColor = Color(0xFF88d0fa);
+var textColor = Color(0xFF494635);

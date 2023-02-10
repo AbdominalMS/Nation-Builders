@@ -1,17 +1,22 @@
-// @dart=2.9
+// @dart =2.9
 import 'dart:async';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:equihealth/Components.dart';
-import 'package:equihealth/login.dart';
+import 'package:equihealth/Sign%20Up/SignUp.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 import 'MyApp.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 void main() async {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
       overlays: [SystemUiOverlay.bottom]);
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(Start());
 }
 class Start extends StatefulWidget{
@@ -55,7 +60,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   void dispose() {
   super.dispose();
   }
-
 
   @override
   Widget build(BuildContext context) {

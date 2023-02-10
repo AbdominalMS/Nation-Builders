@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:equihealth/Components.dart';
-import 'package:hexcolor/hexcolor.dart';
 Duration duration = Duration();
 
 
@@ -94,7 +93,7 @@ required String header,
           Container(
         padding: EdgeInsets.all(12.0),
         decoration: BoxDecoration(
-          color: HexColor('aaaaaa'),
+          color: Color(0xFFaaaaaa),
           borderRadius: BorderRadius.circular(20),
         ),
         child: Text(

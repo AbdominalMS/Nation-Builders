@@ -1,10 +1,19 @@
 import 'package:equihealth/Components.dart';
+import 'package:equihealth/Mental_Health/Disorders/Anxiety%20disorder/Anxiety_Disorder.dart';
+import 'package:equihealth/Mental_Health/Disorders/Eating%20disorder/Eating_Disorder.dart';
+import 'package:equihealth/Mental_Health/Disorders/OCD/OCD.dart';
+import 'package:equihealth/Mental_Health/Disorders/PTSD/PTSD.dart';
+import 'package:equihealth/Mental_Health/Disorders/Psychosis/Psychosis.dart';
 import 'package:equihealth/Mental_Health/Disorders/substance_use_disorder.dart';
+import 'package:equihealth/Mental_Health/Disorders/Specific disorder/Specific_Disorder.dart';
+import 'package:equihealth/Mental_Health/Disorders/Personality disorder/Personality_Disorder.dart';
 import 'package:equihealth/variables.dart';
-import 'package:equihealth/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:equihealth/Mental_Health/Disorders/depression/depression.dart';
+
+import 'Disorders/Bipolar disorder/Bipolar_Disorder.dart';
+import 'Disorders/Schizophrenia/Schizophrenia.dart';
 
 class Mental_Health extends StatelessWidget {
   @override
@@ -39,7 +48,9 @@ class Mental_Health extends StatelessWidget {
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => depression()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -61,7 +72,9 @@ class Mental_Health extends StatelessWidget {
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Bipolar_Disorder()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -78,67 +91,13 @@ class Mental_Health extends StatelessWidget {
                               ),
                             ),
                           ),
-
-                          // Mood Disorder
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                primary: secondaryColor,
-                                shape: new RoundedRectangleBorder(
-                                  borderRadius: new BorderRadius.circular(30.0),
-                                ),
-                              ),
-                              child: Text(
-                                'Mood Disorder',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: primaryColor,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(top: height * 0.01),
-                      width: width,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          // Panic Disorder
-                          Container(
-                            height: height * 0.15,
-                            width: width * 0.3,
-                            child: ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                primary: secondaryColor,
-                                shape: new RoundedRectangleBorder(
-                                  borderRadius: new BorderRadius.circular(30.0),
-                                ),
-                              ),
-                              child: Text(
-                                'Panic Disorder',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: primaryColor,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-
-                          // Anxiety Disorder
-                          Container(
-                            height: height * 0.15,
-                            width: width * 0.3,
-                            child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Anxiety_Disorder()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -155,13 +114,23 @@ class Mental_Health extends StatelessWidget {
                               ),
                             ),
                           ),
-
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(top: height * 0.01),
+                      width: width,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
                           //Eating Disorder
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Eating_Disorder()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -177,22 +146,14 @@ class Mental_Health extends StatelessWidget {
                                     fontWeight: FontWeight.bold),
                               ),
                             ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(top: height * 0.01),
-                      width: width,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          // Schizophrenia
+                          ),
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Schizophrenia()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -209,13 +170,13 @@ class Mental_Health extends StatelessWidget {
                               ),
                             ),
                           ),
-
-                          // Specific Disorder
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Specific_Disorder()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -224,29 +185,6 @@ class Mental_Health extends StatelessWidget {
                               ),
                               child: Text(
                                 'Specific Disorder',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: primaryColor,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-
-                          // OCD
-                          Container(
-                            height: height * 0.15,
-                            width: width * 0.3,
-                            child: ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                primary: secondaryColor,
-                                shape: new RoundedRectangleBorder(
-                                  borderRadius: new BorderRadius.circular(30.0),
-                                ),
-                              ),
-                              child: Text(
-                                'OCD',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: primaryColor,
@@ -264,7 +202,30 @@ class Mental_Health extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          // Substance Use Disorder
+                          // OCD
+                          Container(
+                            height: height * 0.15,
+                            width: width * 0.3,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => OCD()));
+                              },
+                              style: ElevatedButton.styleFrom(
+                                primary: secondaryColor,
+                                shape: new RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                              ),
+                              child: Text(
+                                'OCD',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: primaryColor,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
@@ -292,13 +253,13 @@ class Mental_Health extends StatelessWidget {
                               ),
                             ),
                           ),
-
-                          // PTSD
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => PTSD()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -315,13 +276,23 @@ class Mental_Health extends StatelessWidget {
                               ),
                             ),
                           ),
-
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(top: height * 0.01),
+                      width: width,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
                           // Psychosis
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Psychosis()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -337,22 +308,14 @@ class Mental_Health extends StatelessWidget {
                                     fontWeight: FontWeight.bold),
                               ),
                             ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(top: height * 0.01),
-                      width: width,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          // Personality Disorder
+                          ),
                           Container(
                             height: height * 0.15,
                             width: width * 0.3,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Personality_Disorder()));
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: secondaryColor,
                                 shape: new RoundedRectangleBorder(
@@ -361,29 +324,6 @@ class Mental_Health extends StatelessWidget {
                               ),
                               child: Text(
                                 'Personality Disorder',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: primaryColor,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-
-                          // Autoimmune Disorder
-                          Container(
-                            height: height * 0.15,
-                            width: width * 0.3,
-                            child: ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                primary: secondaryColor,
-                                shape: new RoundedRectangleBorder(
-                                  borderRadius: new BorderRadius.circular(30.0),
-                                ),
-                              ),
-                              child: Text(
-                                'Autoimmune Disorder',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: primaryColor,

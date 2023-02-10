@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061966835125",
+    "project_id": "equihealth-11fcb",
+    "storage_bucket": "equihealth-11fcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061966835125:android:d925cec354df9c83f67dfc",
+        "android_client_info": {
+          "package_name": "com.equihealth.equihealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061966835125-2s7stkq5mh0cg880o36497n315qa0boc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHOwg81-UKQebdJYWbj8lhaw6xlL_KZao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061966835125-2s7stkq5mh0cg880o36497n315qa0boc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

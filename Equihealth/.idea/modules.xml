@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Equihealth.iml" filepath="$PROJECT_DIR$/.idea/Equihealth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/equihealth.iml" filepath="$PROJECT_DIR$/equihealth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/equihealth_android.iml" filepath="$PROJECT_DIR$/android/equihealth_android.iml" />
     </modules>
   </component>
 </project>

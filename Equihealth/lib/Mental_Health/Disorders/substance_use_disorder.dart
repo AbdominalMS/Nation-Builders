@@ -1,6 +1,5 @@
 import 'package:equihealth/Components.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:equihealth/main.dart';
 import 'package:flutter/material.dart';
 import 'package:equihealth/variables.dart';
@@ -216,7 +215,7 @@ class Substance_use_disorder extends StatelessWidget {
                             left: width * 0.02, right: width * 0.02),
                         width: width * 0.9,
                         height: 200,
-                        color: HexColor('#ececec'),
+                        color: Color(0xFFececec),
                       ),
                       Text(
                         'Dr. Kareem | How to overcome substance use disorder',
@@ -227,7 +226,7 @@ class Substance_use_disorder extends StatelessWidget {
                             left: width * 0.02, right: width * 0.02),
                         width: width * 0.9,
                         height: 200,
-                        color: HexColor('#ececec'),
+                        color: Color(0xFFececec),
                       ),
                       Text(
                         'Real life story | My journey in giving up cocaine',

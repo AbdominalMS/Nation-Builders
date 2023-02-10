@@ -1,9 +1,8 @@
-import 'package:equihealth/Mood_Tracker/Features/Communications_Cards.dart/Emergency_Contact.dart';
+import 'package:equihealth/Emergency_Contact.dart';
 import 'package:equihealth/variables.dart';
 import 'package:flutter/material.dart';
 import 'package:equihealth/Components.dart';
 import 'package:equihealth/main.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class Communication_Card extends StatefulWidget{
   @override
@@ -48,7 +47,7 @@ class _Communication_CardState extends State<Communication_Card> {
                     controller: controller,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: HexColor("f3f3f3"),
+                      fillColor: Color(0xFFf3f3f3),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                         borderSide: BorderSide.none,
@@ -90,7 +89,7 @@ class _Communication_CardState extends State<Communication_Card> {
                         shape: new RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0),
                         ),
-                        primary: HexColor("004aad")),
+                        primary: Color(0xFF004aad)),
                   ),
                 ),
               ],

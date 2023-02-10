@@ -1,9 +1,9 @@
+import 'package:equihealth/User_Auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 import 'Components.dart';
-import 'login.dart';
+import 'Sign Up/SignUp.dart';
 class MyApp extends StatelessWidget {
   @override
 
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                     Text(
                       'Choose language              اختر اللغة',
                       style: TextStyle(
-                          color: HexColor("004aad"),
+                          color: Color(0xFF004aad),
                           fontWeight: FontWeight.bold,
                           fontSize: 14.1),
                     ),
@@ -43,29 +43,29 @@ class MyApp extends StatelessWidget {
                         Container(
                             width: 317,
                             height: 52,
-                            color: HexColor("004aad"),
+                            color: Color(0xFF004aad),
                             child: Center(
                                 child: ElevatedButton(
                                   child: const Text('English'),
                                   onPressed: () {
-                                    NavigateAndFinish(context, Login());
+                                    NavigateAndFinish(context, User_Auth());
                                   },
                                   style: ElevatedButton.styleFrom(
                                       minimumSize: const Size(317, 52),
-                                      primary: HexColor("004aad")),
+                                      primary: Color(0xFF004aad)),
                                 ))),
                         const SizedBox(width: 200, height: 20),
                         Container(
                             width: 317,
                             height: 52,
-                            color: HexColor("004aad"),
+                            color: Color(0xFF004aad),
                             child: Center(
                                 child: ElevatedButton(
                                   child: const Text('Arabic'),
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
                                       minimumSize: const Size(317, 52),
-                                      primary: HexColor("004aad")),
+                                      primary: Color(0xFF004aad)),
                                 ))),
                       ],
                     ),

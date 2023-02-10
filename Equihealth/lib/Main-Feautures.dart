@@ -8,7 +8,6 @@ import 'package:equihealth/Sexual%20Abuse/Sexual_Abuse.dart';
 import 'package:equihealth/Specialist.dart';
 import 'package:equihealth/variables.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'loading.dart';
 
 class MainFeatures extends StatefulWidget {
@@ -35,10 +34,10 @@ class _MainFeaturesState extends State<MainFeatures> {
             drawerEdgeDragWidth: MediaQuery.of(context).size.width,
             appBar: AppBar(
               iconTheme: IconThemeData(color: primaryColor),
-              backgroundColor: HexColor('ffffff'),
+              backgroundColor: Color(0xFFffffff),
               title: Text('Equihealth',
                   style: TextStyle(
-                      color: HexColor(mainColor), fontWeight: FontWeight.bold)),
+                      color: Color(0xFF004aad), fontWeight: FontWeight.bold)),
 
               actions: [
                 Image.asset(
@@ -66,7 +65,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                       child: Text(
                         'What do you need?',
                         style: TextStyle(
-                            color: HexColor('004aad'),
+                            color: Color(0xFF004aad),
                             fontSize: 31.5,
                             fontWeight: FontWeight.bold),
                       ),
@@ -86,7 +85,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     shape: const CircleBorder(),
-                                    primary: HexColor('88d0fa'),
+                                    primary: Color(0xFF88d0fa),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
@@ -112,7 +111,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                   textAlign: TextAlign.center,
                                   maxLines: 2,
                                   style: TextStyle(
-                                      color: HexColor(mainColor),
+                                      color: primaryColor,
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -127,7 +126,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     shape: const CircleBorder(),
-                                    primary: HexColor('88d0fa'),
+                                    primary: Color(0xFF88d0fa),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
@@ -153,7 +152,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                   textAlign: TextAlign.center,
                                   maxLines: 2,
                                   style: TextStyle(
-                                      color: HexColor(mainColor),
+                                      color: Color(0xFF004aad),
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -168,7 +167,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     shape: const CircleBorder(),
-                                    primary: HexColor('88d0fa'),
+                                    primary: Color(0xFF88d0fa),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
@@ -194,7 +193,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                   textAlign: TextAlign.center,
                                   maxLines: 2,
                                   style: TextStyle(
-                                      color: HexColor(mainColor),
+                                      color: Color(0xFF004aad),
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -221,7 +220,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     shape: const CircleBorder(),
-                                    primary: HexColor('88d0fa'),
+                                    primary: Color(0xFF88d0fa),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
@@ -247,7 +246,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                   textAlign: TextAlign.center,
                                   maxLines: 2,
                                   style: TextStyle(
-                                      color: HexColor(mainColor),
+                                      color: Color(0xFF004aad),
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -262,7 +261,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     shape: const CircleBorder(),
-                                    primary: HexColor('88d0fa'),
+                                    primary: Color(0xFF88d0fa),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
@@ -288,7 +287,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                   textAlign: TextAlign.center,
                                   maxLines: 2,
                                   style: TextStyle(
-                                      color: HexColor(mainColor),
+                                      color: Color(0xFF004aad),
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -303,7 +302,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     shape: const CircleBorder(),
-                                    primary: HexColor('88d0fa'),
+                                    primary: Color(0xFF88d0fa),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
@@ -329,7 +328,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                                   textAlign: TextAlign.center,
                                   maxLines: 2,
                                   style: TextStyle(
-                                      color: HexColor(mainColor),
+                                      color: Color(0xFF004aad),
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -357,7 +356,7 @@ class _MainFeaturesState extends State<MainFeatures> {
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
                             minimumSize: const Size(317, 52),
-                            primary: HexColor("004aad")),
+                            primary: Color(0xFF004aad)),
                       ),
                     ),
                   ],

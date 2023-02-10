@@ -1,7 +1,7 @@
 import 'package:equihealth/variables.dart';
 import 'package:flutter/material.dart';
 import 'package:equihealth/Components.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 
 class Distance_Water_Management extends StatefulWidget{
   @override
@@ -48,7 +48,7 @@ List<String> bottle = [
                               fontWeight: FontWeight.bold)
                           ,)),
                     Container(
-                      color: HexColor('f8f8f8'),
+                      color: Color(0xFFf8f8f8),
                       width: width * 0.9,
                       height: height * 0.3,
                       child: Row(
