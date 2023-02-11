@@ -1,6 +1,7 @@
 import 'package:equihealth/Components.dart';
 import 'package:equihealth/Mood_Tracker/Games/Games.dart';
 import 'package:equihealth/Mood_Tracker/Features/Daily_Track.dart';
+import 'package:equihealth/Pledge.dart';
 import 'package:equihealth/variables.dart';
 import 'package:flutter/material.dart';
 import 'package:equihealth/Mood_Tracker/Features/Communications_Cards.dart/Communication_Cards.dart';
@@ -128,7 +129,7 @@ class Mood_Tracker extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Games()));
+                                      builder: (context) => Pledge()));
                             },
                             style: ElevatedButton.styleFrom(
                               primary: secondaryColor,

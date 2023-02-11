@@ -76,7 +76,7 @@ flutter:
     - Assets/Distance/Full-Bottle.png
     - Assets/Animations/intro.json
     - Assets/Animations/loading.json
-
+    - Assets/Pledge.png
 
 
   #  - images/a_dot_ham.jpeg
